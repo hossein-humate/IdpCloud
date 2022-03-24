@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "name": "humate.wasm",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.13",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "postcss wwwroot/css/app.css -o wwwroot/css/app.min.css"
+  },
+  "author": "Hossein S Bagheri",
+  "license": "ISC",
+  "description": ""
+}

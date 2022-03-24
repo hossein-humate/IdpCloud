@@ -1,0 +1,141 @@
+﻿
+<div @onclick="ToggleShow"
+     class="fixed inset-0 z-10 bg-primary-darker @(_isSidebarOpen?"":"hidden")"
+     style="opacity: 0.5"
+     aria-hidden="true"></div>
+<section class="z-10 transition duration-300 ease-in-out transform sm:duration-500 transform @(_isSidebarOpen?"translate-x-0":
+                  "translate-x-full")
+         fixed inset-y-0 right-0 h-full max-w-xs bg-white shadow-xl dark:bg-darker dark:text-light sm:max-w-md focus:outline-none"
+         aria-labelledby="settinsPanelLabel">
+    <div class="absolute left-0 p-2 transform -translate-x-full" style="top: 38%;">
+        <!-- Close button -->
+        <button @onclick="ToggleShow" title="لسيت برنامه هاي باز"
+                class="p-2 text-white bg-black dark:bg-light dark:text-black rounded-md focus:outline-none focus:ring">
+            @if (_isSidebarOpen)
+            {
+            <svg class="w-5 h-5"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            }
+            else
+            {
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+            </svg>
+            }
+        </button>
+    </div>
+    <!-- Panel content -->
+    <div class="flex flex-col h-screen">
+        <!-- Panel header -->
+        <!--<div class="flex flex-col items-center justify-center flex-shrink-0 px-4 py-2 space-y-4 border-b dark:border-primary-dark">
+
+        </div>-->
+        <!-- Content -->
+        <div class="flex-1 overflow-hidden hover:overflow-y-auto">
+            <!-- Browser frame mockup -->
+            <div class="relative h-full">
+                <div class="h-full w-full">
+                    <div class="border border-gray-400 rounded-t-lg items-stretch h-full">
+                        <div class="p-2 text-sm flex-0 text-gray-400 whitespace-no-wrap">
+                            <svg title="بستن تمام پنجره ها" class="cursor-pointer mx-px w-8 h-8 inline-block text-red-600 hover:text-red-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <ul>
+                            @foreach (var tabPage in TabPages)
+                            {
+                            <li @onclick="() => ActivateTab(tabPage)">
+                                <div class="relative px-4 py-2 mx-1 mt-2 -mb-px flex-0 border-t border-gray-400
+                                         bg-gray-100 hover:bg-gray-300 active:bg-gray-600 dark:bg-dark rounded-t-lg">
+                                    <!-- Tab text -->
+                                    <div class="cursor-pointer text-sm overflow-hidden pt-1 w-56 whitespace-no-wrap @(tabPage.IsActive ? "active" : "")">
+                                        @tabPage.Title
+                                    </div>
+                                    <!-- Tab text fade near end -->
+                                    <span class="absolute h-full w-full rounded-tl-lg top-0 left-0 m-px w-1/2"
+                                          style="background: linear-gradient(to left, rgba(247, 250, 252, 0.0) 0%, rgb(247, 250, 252) 80%);"></span>
+                                    <!-- Tab close button -->
+                                    <div @onclick="()=>CloseTab(tabPage)" class="text-gray-500 absolute top-0 left-0 pt-2 pl-2 text-xs cursor-pointer">
+                                        <i class="fas fa-times-circle"></i>
+                                        <svg class="mx-px w-6 h-6 inline-block hover:text-red-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                  clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<CascadingValue Value="this">
+    @ChildContent
+</CascadingValue>
+
+@code {
+    [Parameter]
+    public IList<TabPage> TabPages { get; set; } = new List<TabPage>();
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    public TabPage ActivePage { get; set; }
+    private bool _isSidebarOpen = false;
+
+    internal void AddPage(TabPage tabPage)
+    {
+        if (TabPages.Any(i => i.Title == tabPage.Title)) return;
+        TabPages.ToList().ForEach(item =>
+        {
+            item.IsActive = false;
+        });
+        TabPages.Add(tabPage);
+        if (tabPage.IsActive)
+        {
+            ActivePage = tabPage;
+        }
+        StateHasChanged();
+    }
+
+    public void ToggleShow()
+    {
+        _isSidebarOpen = !_isSidebarOpen;
+        StateHasChanged();
+    }
+
+    public void CloseTab(TabPage tabPage)
+    {
+        TabPages.Remove(tabPage);
+        StateHasChanged();
+    }
+
+    public void ShowSidebar()
+    {
+        _isSidebarOpen = true;
+        StateHasChanged();
+    }
+
+    internal void ActivateTab(TabPage tabPage)
+    {
+        ToggleShow();
+        if (ActivePage != null)
+        {
+            ActivePage.IsActive = false;
+        }
+        tabPage.IsActive = true;
+        ActivePage = tabPage;
+        StateHasChanged();
+    }
+}

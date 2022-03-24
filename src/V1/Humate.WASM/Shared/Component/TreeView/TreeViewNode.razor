@@ -1,0 +1,86 @@
+﻿
+<div class="pl-4">
+    @foreach (var item in DataSource.Where(i => i.ParentId == RootElement.Id))
+    {
+        <div>
+            @{
+                item.Childrens = DataSource.Where(i => i.ParentId == item.Id).ToList();
+            }
+            @if (item.Childrens.Count > 0)
+            {
+                <div class="@(item.Selected?"bg-indigo-800":"bg-blue-500") hover:bg-blue-600 active:bg-blue-700 flex items-center justify-between p-2 cursor-pointer @(item.Expanded ? "border-b border-dashed" : "")"
+                     @onclick="()=>SelectedItemChanged(item)">
+                    <div class="flex justify-between items-center w-full">
+                        <div class="flex items-center">
+                            @if (item.ShowCheckBox)
+                            {
+                                <input type="checkbox" checked="@item.Checked" @onclick="@(() => { OnCheckBoxItemChanged?.Invoke(item); })"
+                                                       class="mr-1 focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                            }
+                            @if (item.ShowIcon)
+                            {<IconSvg Svg="@item.Icon"></IconSvg>}
+                            <span class="ml-2 text-sm">@item.Text</span>
+                        </div>
+                        <span class="px-1 text-xs">+@item.Childrens.Count</span>
+                    </div>
+                    <span class="pl-4" @onclick="()=>item.Expanded=!item.Expanded">
+                        <svg class="transition-transform transform  @(item.Expanded ? "rotate-90" : "")"
+                             focusable="false" width="16px" height="16px" viewBox="0 0 32 32">
+                            <path d="M12 8l10 8l-10 8z" fill="currentColor"></path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="cursor-pointer @(item.Expanded?"":"hidden")">
+                    <TreeViewNode OnSelectedItemChanged="(inputValue)=>SelectedItemChanged(inputValue)"
+                                  OnCheckBoxItemChanged="@(inputValue=> { OnCheckBoxItemChanged?.Invoke(inputValue); })"
+                                  DataSource="@DataSource" RootElement="@item"></TreeViewNode>
+                </div>
+            }
+            else
+            {
+                <div class="@(item.Selected?"bg-indigo-800":"bg-blue-500") hover:bg-blue-600 active:bg-blue-700 flex items-center justify-between p-2 cursor-pointer" @onclick="()=>SelectedItemChanged(item)">
+                    <div class="flex justify-between items-center w-full">
+                        <div class="flex items-center">
+                            @if (item.ShowCheckBox)
+                            {
+                                <input type="checkbox" checked="@item.Checked" @bind-value="@item.Checked" @onclick="@(() => { OnCheckBoxItemChanged?.Invoke(item); })"
+                                                       class="mr-1 focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                            }
+                            @if (item.ShowIcon)
+                            {<IconSvg Svg="@item.Icon"></IconSvg>}
+                            <span class="ml-2 text-sm">@item.Text</span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+
+    [Parameter]
+    public NodeItem RootElement { get; set; }
+
+    [Parameter]
+    public IList<NodeItem> DataSource { get; set; }
+
+    [Parameter]
+    public Action<NodeItem> OnSelectedItemChanged { get; set; }
+
+    [Parameter]
+    public Action<NodeItem> OnCheckBoxItemChanged { get; set; }
+    
+    private void SelectedItemChanged(NodeItem item)
+    {
+        try
+        {
+            OnSelectedItemChanged?.Invoke(item);
+            StateHasChanged();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("From TreeViewNode: " + e.Message);
+        }
+    }
+}

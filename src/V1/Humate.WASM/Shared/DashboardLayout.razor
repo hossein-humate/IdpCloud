@@ -1,0 +1,84 @@
+﻿@using Humate.WASM.Dtos.ApiModel
+@using Humate.WASM.Dtos.ApiModel.Permission
+@using Humate.WASM.Dtos.ApiModel.RolePermission.Response
+@using Humate.WASM.Dtos.ApiModel.Software.Response
+@using Humate.WASM.Dtos.ApiModel.User
+@inherits LayoutComponentBase
+
+<div x-data="setup()" x-init="$refs.loading.classList.add('hidden'); setColors(color);" :class="{ 'dark': isDark}">
+    <div class="flex h-screen antialiased text-gray-900 bg-gray-100 dark:bg-dark dark:text-light">
+        <!-- Loading screen -->
+        <div x-ref="loading"
+             class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-primary-darker">
+            Loading.....
+        </div>
+
+        <ToastHost Position="ToastPosition.BottomRight"
+                   Timeout="5"
+                   SuccessClass="success-toast-override"
+                   ErrorIconClass="blazored-toast-error-icon"
+                   SuccessIconClass="blazored-toast-success-icon"
+                   InfoIconClass="blazored-toast-info-icon"
+                   WarningIconClass="blazored-toast-warning-icon" />
+
+        <Sidebar Permissions="@_accessPermissions"></Sidebar>
+
+        <div class="flex-1 h-full overflow-x-hidden overflow-y-auto">
+            <HeaderNavbar Permissions="@_accessPermissions"></HeaderNavbar>
+
+            <!-- Main content -->
+            <main>
+                @Body
+            </main>
+
+            <Footer></Footer>
+        </div>
+
+        <SettingPanel></SettingPanel>
+
+        <NotificationPanel></NotificationPanel>
+
+        <SearchPanel></SearchPanel>
+    </div>
+</div>
+
+@code{
+    private IEnumerable<PermissionApiModel> _accessPermissions = new List<PermissionApiModel>();
+    private int _counter = 0;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            if (!string.IsNullOrEmpty(await LocalStorage.GetItemAsStringAsync("Token")))
+                GlobalVariable.Token = await LocalStorage.GetItemAsStringAsync("Token");
+            if (string.IsNullOrEmpty(GlobalVariable.Token))
+            {
+                Toaster.ShowToast(ToastLevel.Warning, "Invalid user informations!!!", "Error");
+                Navigator.NavigateTo("/signin");
+                return;
+            }
+            var resultTokenValidate = await ApiManager.OptionsAsync<BaseResponse>(GlobalVariable.ApiBaseAddress,
+            $"/api/identity/IsValidToken?token={GlobalVariable.Token}",
+            headers: new Dictionary<string, string> { { "Secret-Key", GlobalVariable.ApiKey } });
+            if (resultTokenValidate.ResultCode != 0)
+            {
+                Toaster.ShowToast(ToastLevel.Warning, resultTokenValidate.Message, "Warning");
+                Navigator.NavigateTo("/signin");
+                return;
+            }
+
+            var resultAccessPermission = await ApiManager.GetAsync<GetRolesUnionPermissionsResponse>(GlobalVariable.ApiBaseAddress,
+                "/api/identity/rolePermission/GetRolesUnionPermissions", GlobalVariable.Token);
+            if (resultAccessPermission.ResultCode != 0)
+            {
+                Toaster.ShowToast(ToastLevel.Warning, resultAccessPermission.Message, "Error");
+                Navigator.NavigateTo("/signin");
+                return;
+            }
+            _accessPermissions = resultAccessPermission.Permissions?.ToList();
+            StateHasChanged();
+        }
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
+}

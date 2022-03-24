@@ -1,0 +1,35 @@
+[
+  {
+    "MasterDetailId": "00000000-0000-0000-0000-000000000000",
+    "CreateDate": "19323729",
+    "UpdateDate": "19323729",
+    "DeleteDate": "19323729",
+    "Name": "Nothing",
+    "Parameter": "MasterDetailDefault",
+    "MasterId": "00000000-0000-0000-0000-000000000000",
+    "Order": 0,
+    "SoftwareId": "126a771c-e319-472f-846d-91828e0f5e09"
+  },
+  {
+    "MasterDetailId": "8c4e9f9b-33b2-4b07-b23f-e95a7185c459",
+    "CreateDate": "19323729",
+    "UpdateDate": "19323729",
+    "DeleteDate": null,
+    "Name": "Document Type",
+    "Parameter": "DocumentType",
+    "MasterId": "00000000-0000-0000-0000-000000000000",
+    "Order": 0,
+    "SoftwareId": "126a771c-e319-472f-846d-91828e0f5e09"
+  },
+  {
+    "MasterDetailId": "7ba19f9b-33b2-4b07-b23f-e95a7185c496",
+    "CreateDate": "19323729",
+    "UpdateDate": "19323729",
+    "DeleteDate": null,
+    "Name": "Document Status",
+    "Parameter": "DocumentStatus",
+    "MasterId": "00000000-0000-0000-0000-000000000000",
+    "Order": 0,
+    "SoftwareId": "126a771c-e319-472f-846d-91828e0f5e09"
+  }
+]

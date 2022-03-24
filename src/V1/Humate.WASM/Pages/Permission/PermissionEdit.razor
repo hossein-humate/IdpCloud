@@ -1,0 +1,171 @@
+﻿@page "/permissionedit/{permissionId}"
+@using Humate.WASM.Dtos.ApiModel.Permission.Request
+@using Humate.WASM.Dtos.ApiModel.Permission.Response
+@using Humate.WASM.Dtos.ApiModel
+@using Humate.WASM.Dtos.ApiModel.Permission
+
+<!-- Content header -->
+<div class="flex items-center justify-between px-4 py-4 border-b lg:py-6 dark:border-primary-darker">
+    <h1 class="text-2xl font-semibold">Edit @_updateRequest.Name Permission</h1>
+    <a href="/permissionlist" class="px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark focus:outline-none
+           focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">Back To All Permissions</a>
+</div>
+
+<!-- Content -->
+<div class="m-2">
+    <!-- Table -->
+    <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 pr-10 lg:px-8">
+        <div class="align-middle rounded-tl-lg rounded-tr-lg inline-block w-full py-4 overflow-hidden bg-white dark:bg-darker shadow-lg px-12">
+            <div class="flex justify-between">
+                <h1>Fill this basic information about your project down here.</h1>
+            </div>
+        </div>
+        <div class="align-middle inline-block min-w-full shadow overflow-hidden bg-white dark:bg-darker shadow-dashboard px-8 pt-3 rounded-bl-lg rounded-br-lg">
+            <div class="h-screen items-center justify-center overflow-y-auto">
+                <div class="grid bg-white dark:bg-darker rounded-lg w-full">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-5 mx-7">
+                        <div class="grid grid-cols-1 ">
+                            <label class="md:text-sm text-xs text-black dark:text-light font-semibold">Name</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent" type="text"
+                                   placeholder="What's this Permission name? e.g. GetAllUser" @bind-value="_updateRequest.Name" />
+                        </div>
+                        <div class="grid grid-cols-1">
+                            <label class="md:text-sm text-xs text-black dark:text-light font-semibold">Action</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent" type="text"
+                                   placeholder="Path Url,Method Name & anything can call it an action in your project?" @bind-value="_updateRequest.Action" />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-5 mx-7">
+                        <div class="grid grid-cols-1">
+                            <label class="md:text-sm text-xs text-black dark:text-light font-semibold">Scope</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent" type="text"
+                                   placeholder="What's this Scope? e.g. read.user" @bind-value="_updateRequest.Scope" />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8 mt-5 mx-7">
+                        <div class="grid grid-cols-1 ">
+                            <label class="md:text-sm text-xs text-black dark:text-light font-semibold">Type</label>
+                            <select class="py-2 px-3 rounded-lg border-2 border-primary mt-1 focus:outline-none focus:ring-2
+                    focus:ring-primary bg-white dark:bg-dark focus:border-transparent" @bind="_updateRequest.Type">
+                                @foreach (var type in Enum.GetNames(typeof(PermissionType)))
+                                {
+                                    if (type == "Link")
+                                    {
+                                        <option value="@Enum.Parse(typeof(PermissionType),type)" selected="selected">@type</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@Enum.Parse(typeof(PermissionType),type)">@type</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-1">
+                            <label class="md:text-sm text-xs text-black dark:text-light font-semibold">Sort Order</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent" type="number"
+                                   placeholder="Number of order in level" @bind-value="_updateRequest.SortOrder" />
+                        </div>
+                        <div class="grid grid-cols-1">
+                            <label class="flex items-center relative w-max cursor-pointer select-none">
+                                <span class="text-lg font-bold mr-3">Is Public:</span>
+                                <input type="checkbox" @bind="_updateRequest.Public" class="appearance-none transition-colors cursor-pointer w-14 h-7
+                                       rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary
+                                       focus:ring-blue-500 bg-red-500" />
+                                <span class="absolute font-medium text-xs right-1 text-white"> No </span>
+                                <span class="absolute font-medium text-xs right-8 text-white">Yes</span>
+                                <span class="w-8 h-8 right-6 shadow-lg absolute rounded-full transform transition-transform bg-gray-200"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center md:gap-8 gap-4 pt-5 pb-5">
+                        <a href="/permissionlist" class="px-4 py-2 text-sm text-white rounded-md bg-danger hover:bg-danger-dark focus:outline-none
+           focus:ring focus:ring-danger focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">Cancel</a>
+                        <button @onclick="UpdateAsync" type="button"
+                                class="inline-flex justify-center px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark focus:outline-none
+           focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">
+                            @if (_loading)
+                            {
+                                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            }
+                            Save
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    [Parameter]
+    public string PermissionId { get; set; }
+
+    private bool _loading = false;
+    private readonly UpdateRequest _updateRequest = new UpdateRequest();
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var token = await LocalStorage.GetItemAsStringAsync("Token");
+            var result = await ApiManager.GetAsync<GetByIdResponse>(GlobalVariable.ApiBaseAddress,
+                $"/api/identity/permission/GetById/{PermissionId}", token: token);
+            if (result.ResultCode != 0)
+            {
+                Toaster.ShowToast(ToastLevel.Error, result.Message, "Server Error");
+                return;
+            }
+            _updateRequest.PermissionId = result.Permission.PermissionId;
+            _updateRequest.Name = result.Permission.Name;
+            _updateRequest.Icon = result.Permission.Icon;
+            _updateRequest.ParentId = result.Permission.ParentId;
+            _updateRequest.Action = result.Permission.Action;
+            _updateRequest.Public = result.Permission.Public;
+            _updateRequest.SortOrder = result.Permission.SortOrder;
+            _updateRequest.Type = result.Permission.Type;
+            StateHasChanged();
+        }
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    private async Task UpdateAsync()
+    {
+        try
+        {
+            if (_loading) return;
+            _loading = true;
+            if (string.IsNullOrEmpty(_updateRequest.Name) || string.IsNullOrEmpty(_updateRequest.Action))
+            {
+                Toaster.ShowToast(ToastLevel.Error, "Enter your permission 'Name' and 'Action'.", "Validation Error");
+                _loading = false;
+                return;
+            }
+            var token = await LocalStorage.GetItemAsStringAsync("Token");
+            var result = await ApiManager.PutAsync<BaseResponse, UpdateRequest>(GlobalVariable.ApiBaseAddress,
+                "/api/identity/permission/update", _updateRequest, token: token);
+            if (result.ResultCode != 0)
+            {
+                Toaster.ShowToast(ToastLevel.Error, result.Message, "Server Error");
+                _loading = false;
+                return;
+            }
+            Navigator.NavigateTo("permissionlist");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message + "\n" + ex.StackTrace);
+        }
+    }
+}

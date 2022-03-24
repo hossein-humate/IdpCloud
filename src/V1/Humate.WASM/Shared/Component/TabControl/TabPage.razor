@@ -1,0 +1,33 @@
+﻿<!-- Page Content  -->
+<div class="w-full h-screen rtls @(IsActive?"":"hidden")">
+    <div class="h-full">
+        @ChildContent
+    </div>
+</div>
+
+@code {
+    [CascadingParameter]
+    public TabControl Parent { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public bool IsActive { get; set; }
+
+    [Parameter]
+    public string ApplicationSrc { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Console.WriteLine("TabPage OnInitialized Called");
+        if (Parent == null)
+            throw new ArgumentNullException(nameof(Parent), "TabPage must exist within a TabControl");
+        Parent.AddPage(this);
+        Console.WriteLine("Parent AddPage Called");
+        base.OnInitialized();
+    }
+}

@@ -1,0 +1,71 @@
+﻿@using AutoMapper.Internal
+
+<div class="p-4">
+    @foreach (var rootItem in DataSource.Where(i => i.ParentId == RootParentId))
+    {
+        <div class="py-2 bg-blue-500 border rounded text-white" style="max-width: none;">
+            <div class="@(rootItem.Selected?"bg-indigo-800":"bg-blue-500") hover:bg-blue-600 active:bg-blue-700 flex items-center justify-between p-2 cursor-pointer"
+                 @onclick="()=>SelectedItemChanged(rootItem)">
+                <div class="flex justify-between items-center w-full">
+                    <div class="flex items-center">
+                        @if (rootItem.ShowCheckBox)
+                        {
+                            <input type="checkbox" checked="@rootItem.Checked" @onclick="()=>CheckBoxItemChanged(rootItem)"
+                                   class="mr-1 focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                        }
+                        @if (rootItem.ShowIcon)
+                        {<IconSvg Svg="@rootItem.Icon"></IconSvg>}
+                        <span class="ml-2 text-sm">@rootItem.Text</span>
+                    </div>
+                    <span class="px-1 text-xs">@(DataSource.Count(i => i.ParentId == rootItem.Id) > 0 ? "+"+ DataSource.Count(i => i.ParentId == rootItem.Id) : "0")</span>
+                </div>
+                @if (DataSource.Count(i => i.ParentId == rootItem.Id) > 0)
+                {
+                    <span class="pl-4" @onclick="()=>rootItem.Expanded = !rootItem.Expanded">
+                        <svg class="transition-transform transform @(rootItem.Expanded ? "rotate-90" : "")"
+                             focusable="false" width="18px" height="18px" viewBox="0 0 32 32">
+                            <path d="M12 8l10 8l-10 8z" fill="currentColor"></path>
+                        </svg>
+                    </span>
+                }
+            </div>
+            <div class="pl-1 cursor-pointer @(rootItem.Expanded?"":"hidden")">
+                <TreeViewNode OnSelectedItemChanged="@SelectedItemChanged"
+                              OnCheckBoxItemChanged="@CheckBoxItemChanged"
+                              DataSource="@DataSource" RootElement="@rootItem"></TreeViewNode>
+            </div>
+        </div>
+    }
+</div>
+
+
+@code
+{
+    [Parameter]
+    public string RootParentId { get; set; }
+
+    [Parameter]
+    public IList<NodeItem> DataSource { get; set; }
+
+    [Parameter]
+    public EventCallback<NodeItem> OnSelectedItemChanged { get; set; }
+
+    private void CheckBoxItemChanged(NodeItem item)
+    {
+        item.Checked = !item.Checked;
+        StateHasChanged();
+    }
+
+    private async void SelectedItemChanged(NodeItem item)
+    {
+        DataSource.ForAll(i =>
+        {
+            i.Selected = i.Id == item.Id;
+        });
+        await OnSelectedItemChanged.InvokeAsync(item);
+        StateHasChanged();
+    }
+
+    public IEnumerable<NodeItem> GetSelectedItems() => DataSource.Where(i => i.Checked);
+    public NodeItem GetSelectedItem() => DataSource.FirstOrDefault(i => i.Selected);
+}

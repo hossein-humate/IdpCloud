@@ -1,0 +1,236 @@
+﻿@page "/userlist"
+@using Humate.WASM.Dtos.ApiModel
+@using Humate.WASM.Dtos.ApiModel.User
+@using Humate.WASM.Dtos.ApiModel.User.Response
+
+<!-- Content header -->
+<div class="flex items-center justify-between px-4 py-4 border-b lg:py-6 dark:border-primary-darker">
+    <h1 class="text-2xl font-semibold">User List</h1>
+    <a href="/usercreate" class="px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark focus:outline-none
+           focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">Create New</a>
+</div>
+
+<!-- Content -->
+<div class="m-2">
+    <ModalDialog HeaderText="Confirm Action" ContentText="Are you sure you want to delete this user?"
+                 ConfirmText="Yes!" CancelText="No" @ref="_confirmDeleteDialog"
+                 OnConfirmCallback="OnConfirmDeleteAsync"></ModalDialog>
+    <!-- Table -->
+    <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 pr-10 lg:px-8">
+        <div class="align-middle rounded-tl-lg rounded-tr-lg inline-block w-full py-4 overflow-hidden bg-white dark:bg-dark shadow-lg px-12">
+            <div class="flex justify-between">
+                <div class="inline-flex border rounded w-7/12 px-2 lg:px-6 h-12 bg-transparent">
+                    <div class="flex flex-wrap items-stretch w-full h-full mb-6 relative">
+                        <div class="flex">
+                            <span class="flex items-center leading-normal bg-transparent rounded rounded-r-none border border-r-0
+                                  border-none lg:px-3 py-2 whitespace-no-wrap text-grey-dark text-sm">
+                                <svg width="18" height="18" class="w-4 lg:w-auto" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke="#455A64" stroke-linecap="round" stroke-linejoin="round" 
+                                          d="M8.11086 15.2217C12.0381 15.2217 15.2217 12.0381 15.2217 8.11086C15.2217 4.18364 12.0381 1 8.11086 1C4.18364 1 1 4.18364 1 8.11086C1 12.0381 4.18364 15.2217 8.11086 15.2217Z"/>
+                                    <path stroke="#455A64" stroke-linecap="round" stroke-linejoin="round" 
+                                          d="M16.9993 16.9993L13.1328 13.1328" />
+                                </svg>
+                            </span>
+                        </div>
+                        <input type="text" class="flex-shrink flex-grow flex-auto leading-normal tracking-wide w-px
+                               flex-1 border border-none border-l-0 rounded rounded-l-none px-3 relative dark:bg-dark
+                               focus:outline-none text-xxs lg:text-xs lg:text-base text-gray-500 font-thin"
+                               placeholder="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="align-middle inline-block min-w-full shadow overflow-hidden bg-white dark:bg-darker shadow-dashboard px-8 pt-3 rounded-bl-lg rounded-br-lg">
+            <table class="min-w-full">
+                <thead>
+                    <tr>
+                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 
+                            dark:text-light tracking-wider">Username</th>
+                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 
+                            dark:text-light tracking-wider">Email Address</th>
+                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 
+                            dark:text-light tracking-wider">Mobile</th>
+                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 
+                            dark:text-light tracking-wider">Picture</th>
+                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 
+                            dark:text-light tracking-wider">Status</th>
+                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 
+                            dark:text-light tracking-wider">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white dark:bg-dark">
+                    @{
+                        bool isEven = false;
+                        foreach (var user in _users)
+                        {
+                            <tr class="@(isEven?"bg-gray-100 dark:bg-darker":"")">
+                                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <div class="text-sm leading-5 text-gray-800 dark:text-light">@user.Username</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-no-wrap border-b text-blue-900 dark:text-light border-gray-500
+                                    text-sm leading-5">
+                                    @user.Email
+                                </td>
+                                <td class="px-6 py-4 whitespace-no-wrap border-b text-blue-900 dark:text-light border-gray-500
+                                    text-sm leading-5">
+                                    @user.Mobile
+                                </td>
+                                <td class="px-6 py-4 whitespace-no-wrap border-b text-blue-900 border-gray-500 text-sm leading-5">
+                                    <div class="flex">
+                                        <div class="flex bg-purple-200 rounded-full border-2 border-purple-300">
+                                            @if (!string.IsNullOrEmpty(user.Picture))
+                                            {
+                                                <img src="@user.Picture" alt="Project Logo" class="w-7 h-7 rounded-full" />
+                                            }
+                                            else
+                                            {
+                                                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor"
+                                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                                          d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                                                </svg>
+                                            }
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500">
+                                    <div class="text-sm leading-5 text-blue-900 dark:text-light">@(user.Status.ToString())</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500 text-sm leading-5 flex justify-start">
+                                    <a href="useredit/@(user.UserId)" class="mr-3 px-2 py-1 text-sm text-white rounded-md bg-primary hover:bg-primary-dark
+                                            focus:outline-none focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" title="Remove this record" class="px-2 py-1 text-sm text-white rounded-md bg-danger hover:bg-danger-dark
+                                            focus:outline-none focus:ring focus:ring-danger focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark"
+                                       @onclick="()=> _confirmDeleteDialog.Show(user)" @onclick:preventDefault="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            isEven = !isEven;
+                        }
+                    }
+                </tbody>
+            </table>
+            <div class="sm:flex-1 sm:flex sm:items-center sm:justify-between mt-4 work-sans">
+                <div>
+                    <p class="text-sm leading-5 text-blue-700 dark:text-light">
+                        Showing
+                        <span class="font-medium">1</span>
+                        to
+                        <span class="font-medium">200</span>
+                        of
+                        <span class="font-medium">@_users.Count()</span>
+                        results
+                    </p>
+                </div>
+                <div>
+                    <nav class="relative z-0 inline-flex shadow-sm m-2 bg-white dark:bg-dark text-blue-700 dark:text-light">
+                        <div>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300
+                               text-sm leading-5 font-medium hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300
+                               focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150" 
+                               aria-label="Previous" v-on:click.prevent="changePage(pagination.current_page - 1)">
+                                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"  clip-rule="evenodd" 
+                                          d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 
+                               text-sm leading-5 font-medium focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue
+                               active:bg-tertiary active:text-gray-700 transition ease-in-out duration-150 hover:bg-tertiary">
+                                1
+                            </a>
+                            <a href="#" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5
+                               font-medium focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-tertiary
+                               active:text-gray-700 transition ease-in-out duration-150 hover:bg-tertiary">
+                                2
+                            </a>
+                            <a href="#" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5
+                               font-medium focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-tertiary
+                               active:text-gray-700 transition ease-in-out duration-150 hover:bg-tertiary">
+                                3
+                            </a>
+                        </div>
+                        <div v-if="pagination.current_page < pagination.last_page">
+                            <a href="#" class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 text-sm
+                               leading-5 font-medium hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 
+                               focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150" aria-label="Next">
+                                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" 
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private ModalDialog _confirmDeleteDialog;
+    private IList<UserApiModel> _users = new List<UserApiModel>();
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            ServiceHelper.ClearStack();
+            ServiceHelper.CurrentProjectChangedAsync += LoadContentAsync;
+            await LoadContentAsync();
+        }
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    private async Task LoadContentAsync()
+    {
+        var token = await LocalStorage.GetItemAsStringAsync("Token");
+        var result = await ApiManager.GetAsync<GetBySoftwareIdResponse>(GlobalVariable.ApiBaseAddress,
+            $"/api/identity/user/GetBySoftwareId/{await LocalStorage.GetItemAsStringAsync("CurrentProject")}", token);
+        if (result.ResultCode != 0)
+        {
+            Toaster.ShowToast(ToastLevel.Error, result.Message, "Server Error");
+            return;
+        }
+        _users = result.Users.ToList();
+        Toaster.ShowToast(ToastLevel.Info,
+            "Loading all Users for selected project successfully completed.", "Select Project");
+        StateHasChanged();
+    }
+
+    private async Task OnConfirmDeleteAsync(object input)
+    {
+        var user = input as UserApiModel;
+        if (user == null)
+        {
+            Toaster.ShowToast(ToastLevel.Error, "Cannot get user information.", "Client Error");
+            return;
+        }
+        var token = await LocalStorage.GetItemAsStringAsync("Token");
+        var result = await ApiManager.DeleteAsync<BaseResponse>(GlobalVariable.ApiBaseAddress,
+        $"/api/identity/user/Delete/{user.UserId}", token);
+        if (result.ResultCode != 0)
+        {
+            Toaster.ShowToast(ToastLevel.Error, result.Message, "Server Error");
+            return;
+        }
+        _users.Remove(user);
+        Toaster.ShowToast(ToastLevel.Info,
+            "Deleting User successfully completed.", "Delete User");
+    }
+}

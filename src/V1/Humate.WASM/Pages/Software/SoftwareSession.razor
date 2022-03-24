@@ -1,0 +1,180 @@
+﻿@page "/softwareSession"
+@using Humate.WASM.Dtos.ApiModel
+@using Humate.WASM.Dtos.ApiModel.UserSession
+@using Humate.WASM.Dtos.ApiModel.UserSession.Request
+@using Humate.WASM.Dtos.ApiModel.UserSession.Response
+
+<!-- Content header -->
+<div class="flex items-center justify-between px-4 py-4 border-b lg:py-6 dark:border-primary-darker">
+    <h1 class="text-2xl font-semibold">Project @(_activeSessionMode?"Active":"All") Sessions</h1>
+
+    <div class="flex inline-flex justify-between p-2">
+        <button @onclick="@SwitchModeAsync" class="m-2 px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark
+       focus:outline-none focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white
+       dark:focus:ring-offset-dark">
+            Switch To @(!_activeSessionMode?"Active":"All") Sessions
+        </button>
+        <button @onclick="LoadContentAsync" class="m-2 px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark
+       focus:outline-none focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white
+       dark:focus:ring-offset-dark">
+            Refresh Data
+        </button>
+        @if (_activeSessionMode)
+        {
+            <button @onclick="@OnTerminateAll" class="m-2 px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark
+               focus:outline-none focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white
+               dark:focus:ring-offset-dark">
+                Terminate All Sessions
+            </button>
+        }
+    </div>
+</div>
+
+<!-- Content -->
+<div class="m-2">
+    <ModalDialog HeaderText="Confirm Action" ContentText="Are you sure you want to Terminate this Session?"
+                 ConfirmText="Yes!" CancelText="No" @ref="_confirmTerminateDialog"
+                 OnConfirmCallback="OnConfirmTerminateAsync"></ModalDialog>
+    <ModalDialog HeaderText="Confirm Action" ContentText="Are you sure you want to Terminate All Sessions?"
+                 ConfirmText="Yes!" CancelText="No" @ref="_confirmTerminateAllDialog"
+                 OnConfirmCallback="OnConfirmTerminateAllAsync"></ModalDialog>
+
+    @if (!string.IsNullOrEmpty(_apiMessage))
+    {
+        <label class="text-sm font-semibold text-red-500">@_apiMessage</label>
+    }
+
+    <DataGrid @ref="@_dataGridUserSessions"
+              HeaderColumns="@(new List<ColumnItem>
+                         {
+                             new ColumnItem
+                             {
+                                 ParameterName = "UserSessionId",
+                                 Invisible = true
+                             },
+                             new ColumnItem
+                             {
+                                 ParameterName = "Status"
+                             },
+                             new ColumnItem
+                             {
+                                 ParameterName = "AuthType",
+                                 DisplayName = "Authentication Type"
+                             },
+                             new ColumnItem
+                             {
+                                 ParameterName = "User.Username",
+                                 DisplayName = "Username"
+                             },
+                             new ColumnItem
+                             {
+                                 ParameterName = "Actions",
+                                 ActionButtons = new List<ActionButton>
+                                 {
+                                     new ActionButton
+                                     {
+                                         IconName = SvgName.User,
+                                         Tooltip = "Terminate Session",
+                                         Event = OnTerminateSession
+                                     }
+                                 }
+                             }
+                         })"
+              DataSource="@_userSessions"
+              EnableCheckBox="true"
+              TItems="UserSessionApiModel"></DataGrid>
+</div>
+
+@code {
+    private bool _activeSessionMode = false;
+    private ModalDialog _confirmTerminateDialog;
+    private ModalDialog _confirmTerminateAllDialog;
+    private DataGrid<UserSessionApiModel> _dataGridUserSessions = new DataGrid<UserSessionApiModel>();
+    private string _apiMessage = "";
+    private IList<UserSessionApiModel> _userSessions = new List<UserSessionApiModel>();
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            ServiceHelper.ClearStack();
+            ServiceHelper.CurrentProjectChangedAsync += LoadContentAsync;
+            await LoadContentAsync();
+        }
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    private async Task LoadContentAsync()
+    {
+        var token = await LocalStorage.GetItemAsStringAsync("Token");
+        var result = await ApiManager.GetAsync<GetBySoftwareIdResponse>(GlobalVariable.ApiBaseAddress,
+            $"/api/sso/userSession/{(_activeSessionMode ? "GetActiveBySoftwareId" : "GetBySoftwareId")}/{await LocalStorage.GetItemAsStringAsync("CurrentProject")}", token);
+        if (result.ResultCode != 0)
+        {
+            _apiMessage = result.Message;
+            return;
+        }
+        _userSessions = result.UserSessions.ToList();
+        StateHasChanged();
+    }
+
+    private async Task OnConfirmTerminateAsync(object input)
+    {
+        var userSession = (input as RowItem)?.BaseObject as UserSessionApiModel;
+        if (userSession == null)
+        {
+            Toaster.ShowToast(ToastLevel.Error, "Cannot get UserSession information.", "Client Error");
+            return;
+        }
+        var token = await LocalStorage.GetItemAsStringAsync("Token");
+        var result = await ApiManager.PatchAsync<BaseResponse, TerminateByUserSessionIdRequest>(GlobalVariable.ApiBaseAddress,
+        $"/api/sso/userSession/TerminateByUserSessionId", new TerminateByUserSessionIdRequest
+        {
+            UserSessionId = userSession.UserSessionId
+        }, token);
+        if (result.ResultCode != 0)
+        {
+            _apiMessage = result.Message;
+            return;
+        }
+        await LoadContentAsync();
+    }
+
+    private async Task OnConfirmTerminateAllAsync(object input)
+    {
+        var userSession = (input as RowItem)?.BaseObject as UserSessionApiModel;
+        if (userSession == null)
+        {
+            Toaster.ShowToast(ToastLevel.Error, "Cannot get UserSession information.", "Client Error");
+            return;
+        }
+        var token = await LocalStorage.GetItemAsStringAsync("Token");
+        var result = await ApiManager.PatchAsync<BaseResponse, TerminateByUserSessionIdRequest>(GlobalVariable.ApiBaseAddress,
+            $"/api/sso/userSession/TerminateByUserSessionId", new TerminateByUserSessionIdRequest
+            {
+                UserSessionId = userSession.UserSessionId
+            }, token);
+        if (result.ResultCode != 0)
+        {
+            _apiMessage = result.Message;
+            return;
+        }
+        await LoadContentAsync();
+    }
+
+    private void OnTerminateSession(RowItem rowItem)
+    {
+        _confirmTerminateDialog.Show(rowItem);
+    }
+
+    private void OnTerminateAll()
+    {
+        _confirmTerminateAllDialog.Show();
+    }
+
+    private async Task SwitchModeAsync()
+    {
+        _activeSessionMode = !_activeSessionMode;
+        await LoadContentAsync();
+    }
+}

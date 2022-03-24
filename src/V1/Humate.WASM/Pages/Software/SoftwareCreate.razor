@@ -1,0 +1,183 @@
+﻿@page "/softwarecreate"
+@using System.IO
+@using Humate.WASM.Common
+@using Humate.WASM.Dtos.ApiModel.Software.Request
+@using Humate.WASM.Dtos.ApiModel.Software.Response
+
+<!-- Content header -->
+<div class="flex items-center justify-between px-4 py-4 border-b lg:py-6 dark:border-primary-darker">
+    <h1 class="text-2xl font-semibold">Create New Project</h1>
+    <a href="/softwarelist" class="px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark focus:outline-none
+           focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">Back To All Project</a>
+</div>
+
+<!-- Content -->
+<div class="m-2">
+    <!-- Table -->
+    <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 pr-10 lg:px-8">
+        <div class="align-middle rounded-tl-lg rounded-tr-lg inline-block w-full py-4 overflow-hidden bg-white dark:bg-darker shadow-lg px-12">
+            <div class="flex justify-between">
+                <h1>Fill this basic information about your project down here.</h1>
+            </div>
+        </div>
+        <div class="align-middle inline-block min-w-full shadow overflow-hidden bg-white dark:bg-darker shadow-dashboard px-8 pt-3 rounded-bl-lg rounded-br-lg">
+            <div class="h-screen items-center justify-center overflow-y-auto">
+                <div class="grid bg-white dark:bg-darker rounded-lg w-full">
+                    <div class="flex justify-center py-2">
+                        <div class="flex bg-purple-200 rounded-full p-2 border-2 border-purple-300">
+                            @if (!string.IsNullOrEmpty(_loadedLogo))
+                            {
+                                <img src="@_loadedLogo" alt="Project Logo" class="w-20 h-20 rounded-full" />
+                            }
+                            else
+                            {
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <div class="flex">
+                            @if (!string.IsNullOrEmpty(_createRequest.Name))
+                            {
+                                <h1 class="text-gray-600 font-bold md:text-2xl text-xl">@_createRequest.Name</h1>
+                            }
+                            else
+                            {
+                                <h1 class="text-gray-600 font-bold md:text-2xl text-xl">My New Project</h1>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-5 mx-7">
+                        <div class="grid grid-cols-1">
+                            <label class="uppercase md:text-sm text-xs text-gray-200 font-semibold">Project Name</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent" type="text"
+                                   placeholder="'my project name All-In-One'" @bind-value="_createRequest.Name" />
+                        </div>
+                        <div class="grid grid-cols-1">
+                            <label class="uppercase md:text-sm text-xs text-gray-200 font-semibold">Brand</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent" type="text"
+                                   placeholder="'my brand is Humate'" @bind-value="_createRequest.Brand" />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 mt-5 mx-7">
+                        <label class="uppercase md:text-sm text-xs text-gray-200 font-semibold">Business Description</label>
+                        <textarea class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent" @bind="_createRequest.BusinessDescription"
+                                  placeholder="'anything useful about my project and company or startup...'"></textarea>
+                    </div>
+
+                    <div class="grid grid-cols-1 mt-5 mx-7">
+                        <label class="uppercase md:text-sm text-xs text-gray-200 font-semibold mb-1">Upload Your Logo</label>
+                        <div class="flex items-center justify-center w-full">
+                            <label class="flex flex-col border-4 border-dashed w-full h-32 hover:bg-gray-100 hover:border-primary group">
+                                <div class="flex flex-col items-center justify-center pt-7">
+                                    <svg class="w-10 h-10 text-gray-400 group-hover:text-primary" fill="none"
+                                         stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                    </svg>
+                                    @if (!string.IsNullOrEmpty(_confirmedLogo))
+                                    {
+                                        <label class="text-sm font-semibold @(!string.IsNullOrEmpty(_loadedLogo)?"text-green-500":"text-red-500")">@_confirmedLogo</label>
+                                    }
+                                    else
+                                    {
+                                        <p class="lowercase text-sm text-gray-400 group-hover:text-primary pt-1 tracking-wider">Select a photo</p>
+                                    }
+                                </div>
+                                <InputFile type="file" class="hidden" OnChange="@LoadFilesAsync" />
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center md:gap-8 gap-4 pt-5 pb-5">
+                        <a href="/softwarelist" class="px-4 py-2 text-sm text-white rounded-md bg-danger hover:bg-danger-dark focus:outline-none
+           focus:ring focus:ring-danger focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">Cancel</a>
+                        <button @onclick="CreateAsync" type="button"
+                                class="px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark focus:outline-none
+           focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">
+                            Create
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private long _maxFileSize = 1024 * 1024 * 2; //2MB
+    private string _confirmedLogo = "";
+    private string _loadedLogo = "";
+    private readonly CreateRequest _createRequest = new CreateRequest();
+
+    private async Task CreateAsync()
+    {
+        try
+        {
+            if (string.IsNullOrEmpty(_createRequest.Name) || string.IsNullOrEmpty(_createRequest.BusinessDescription))
+            {
+                Toaster.ShowToast(ToastLevel.Error, "Enter your project 'Name' and 'Business Description'.",
+                    "Validation Error");
+                return;
+            }
+            var token = await LocalStorage.GetItemAsStringAsync("Token");
+            var result = await ApiManager.PostAsync<CreateResponse, CreateRequest>(GlobalVariable.ApiBaseAddress,
+                "/api/identity/software/create", _createRequest, token: token);
+            if (result.ResultCode != 0)
+            {
+                Toaster.ShowToast(ToastLevel.Error, result.Message, "Server Error");
+                return;
+            }
+            await LocalStorage.SetItemAsStringAsync("CurrentProject", result.SoftwareId.ToString());
+            Toaster.ShowToast(ToastLevel.Info,
+                "Your new Project successfully created.", "Create Project");
+            Navigator.NavigateTo("softwarelist",true);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message + "\n" + ex.StackTrace);
+        }
+    }
+
+    async Task LoadFilesAsync(InputFileChangeEventArgs e)
+    {
+        try
+        {
+            if (e.File.Size > _maxFileSize)
+            {
+                Toaster.ShowToast(ToastLevel.Error, "Cannot allow logo file size more than 2MB."
+                    , "Validation Error");
+                _confirmedLogo = "Cannot allow logo file size more than 2MB.";
+                _loadedLogo = "";
+                return;
+            }
+            await using var ms = new MemoryStream();
+            {
+                await e.File.OpenReadStream(_maxFileSize).CopyToAsync(ms);
+                if (!ms.ToArray().IsImageFile())
+                {
+                    Toaster.ShowToast(ToastLevel.Error, "Add a real Photo file, this is not a common Image file."
+                        , "Validation Error");
+                    _confirmedLogo = "Add a real Photo file, this is not a common Image file.";
+                    _loadedLogo = "";
+                    return;
+                }
+                _createRequest.LogoContent = ms.ToArray();
+                _createRequest.LogoName = e.File.Name;
+                _confirmedLogo = "Your Logo has been loaded successfully, Click again if you want to change it.";
+                var imageType = e.File.ContentType;
+                _loadedLogo = $"data:{imageType};base64,{Convert.ToBase64String(_createRequest.LogoContent)}";
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+}

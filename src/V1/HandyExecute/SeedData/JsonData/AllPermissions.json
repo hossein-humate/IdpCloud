@@ -1,0 +1,27 @@
+[
+  {
+    "PermissionId": "00000000-0000-0000-0000-000000000000",
+    "CreateDate": "19323729",
+    "UpdateDate": "19323729",
+    "DeleteDate": "19323729",
+    "Name": "Nothing",
+    "ParentId": "00000000-0000-0000-0000-000000000000",
+    "Type": 0,
+    "SortOrder": 0,
+    "Public": 0,
+    "SoftwareId": "126a771c-e319-472f-846d-91828e0f5e09"
+  },
+  {
+    "PermissionId": "024e2d53-739c-4fcb-b37a-e63f95facec4",
+    "CreateDate": "19323729",
+    "UpdateDate": "19323729",
+    "DeleteDate": null,
+    "Name": "TrustableBridge Dashboard",
+    "Action": "/",
+    "ParentId": "00000000-0000-0000-0000-000000000000",
+    "Type": 8,
+    "SortOrder": 0,
+    "Public": 1,
+    "SoftwareId": "126a771c-e319-472f-846d-91828e0f5e09"
+  }
+]

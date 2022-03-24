@@ -1,0 +1,118 @@
+﻿@page "/usercreate"
+@using Humate.WASM.Dtos.ApiModel.User.Request
+@using Humate.WASM.Dtos.ApiModel
+
+<!-- Content header -->
+<div class="flex items-center justify-between px-4 py-4 border-b lg:py-6 dark:border-primary-darker">
+    <h1 class="text-2xl font-semibold">Create New User</h1>
+    <a href="/userlist" class="px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark focus:outline-none
+           focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">Back To All Users</a>
+</div>
+
+<!-- Content -->
+<div class="m-2">
+    <!-- Table -->
+    <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 pr-10 lg:px-8">
+        <div class="align-middle rounded-tl-lg rounded-tr-lg inline-block w-full py-4 overflow-hidden bg-white dark:bg-darker shadow-lg px-12">
+            <div class="flex justify-between">
+                <h1>Fill this basic information about your New User down here.</h1>
+            </div>
+        </div>
+        <div class="align-middle inline-block min-w-full shadow overflow-hidden bg-white dark:bg-darker shadow-dashboard px-8 pt-3 rounded-bl-lg rounded-br-lg">
+            <div class="h-screen items-center justify-center overflow-y-auto">
+                <div class="grid bg-white dark:bg-darker rounded-lg w-full">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-5 mx-7">
+                        <div class="grid grid-cols-1 ">
+                            <label class="md:text-sm text-xs text-black dark:text-light font-semibold">Username</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent" type="text"
+                                   placeholder="What's the Username? e.g. adminUser!" @bind-value="_createRequest.Username" />
+                        </div>
+                        <div class="grid grid-cols-1">
+                            <label class="md:text-sm text-xs text-black dark:text-light font-semibold">Email</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent" type="email"
+                                   placeholder="What's the Email Address? e.g. info@domain.com!" @bind-value="_createRequest.Email" />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-5 mx-7">
+                        <div class="grid grid-cols-1 ">
+                            <label class="md:text-sm text-xs text-black dark:text-light font-semibold">Mobile</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent appearance-none" type="tel"
+                                   placeholder="What's the Mobile number? e.g. +1 555 555 555!" @bind-value="_createRequest.Mobile" />
+                        </div>
+                        <div class="grid grid-cols-1">
+                            <label class="md:text-sm text-xs text-black dark:text-light font-semibold">Password</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent appearance-none" type="password" autocomplete="new-password"
+                                   placeholder="What's the Password? e.g. C0mP1eX_2o2i!" @bind-value="_createRequest.Password" />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-5 mx-7">
+                        <div class="grid grid-cols-1 ">
+                            <label class="md:text-sm text-xs text-black dark:text-light font-semibold">FirstName</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent" type="text"
+                                   placeholder="What's the Firstname? e.g. Rock!" @bind-value="_createRequest.FirstName" />
+                        </div>
+                        <div class="grid grid-cols-1">
+                            <label class="md:text-sm text-xs text-black dark:text-light font-semibold">LastName</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent" type="text"
+                                   placeholder="What's the Family Name? e.g. Feller!" @bind-value="_createRequest.LastName" />
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center md:gap-8 gap-4 pt-5 pb-5">
+                        <a href="/userlist" class="px-4 py-2 text-sm text-white rounded-md bg-danger hover:bg-danger-dark focus:outline-none
+           focus:ring focus:ring-danger focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">Cancel</a>
+                        <button @onclick="CreateAsync" type="button"
+                                class="px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark focus:outline-none
+           focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">
+                            Create
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    private readonly CreateRequest _createRequest = new CreateRequest();
+
+    private async Task CreateAsync()
+    {
+        try
+        {
+            if (string.IsNullOrEmpty(_createRequest.Username)|| string.IsNullOrEmpty(_createRequest.Password))
+            {
+                Toaster.ShowToast(ToastLevel.Error, "Fill all required parameters 'UserName', 'Password'.",
+                    "Validation Error");
+                return;
+            }
+            var token = await LocalStorage.GetItemAsStringAsync("Token");
+            _createRequest.CountryLivingId = 1;
+            _createRequest.NationalityId = 1;
+            _createRequest.SoftwareId = (await LocalStorage.GetItemAsStringAsync("CurrentProject")).ToGuid();
+            var result = await ApiManager.PostAsync<BaseResponse, CreateRequest>(GlobalVariable.ApiBaseAddress,
+                "/api/identity/user/create", _createRequest, token: token);
+            if (result.ResultCode != 0)
+            {
+                Toaster.ShowToast(ToastLevel.Error, result.Message, "Server Error");
+                return;
+            }
+            Toaster.ShowToast(ToastLevel.Info,
+                "Your new User successfully created.", "Create User");
+            Navigator.NavigateTo("userlist");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message + "\n" + ex.StackTrace);
+        }
+    }
+}

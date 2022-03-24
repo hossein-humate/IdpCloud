@@ -1,0 +1,17 @@
+[
+  {
+    "UserId": "00000000-0000-0000-0000-000000000000",
+    "CreateDate": "19323729",
+    "UpdateDate": "19323729",
+    "DeleteDate": "19323729",
+    "Username": "Nobody",
+    "RegisterIp": "1.0.0.1",
+    "RegisterDate": "19323729",
+    "LoginTimes": 0,
+    "TwoFactorEnable": false,
+    "EmailConfirmed": false,
+    "MobileConfirmed": false,
+    "Status": 0,
+    "EmailConfirmationExpiry": "19323729"
+  }
+]

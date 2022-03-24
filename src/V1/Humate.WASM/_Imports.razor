@@ -1,0 +1,26 @@
+﻿@using System.Net.Http
+@using System.Net.Http.Json
+@using System.Diagnostics
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.AspNetCore.Components.WebAssembly.Http
+@using Microsoft.JSInterop
+@using Humate.WASM
+@using Humate.WASM.Shared
+@using Humate.WASM.Shared.Component.Dialog
+@using Humate.WASM.Shared.Component.Layout
+@using Humate.WASM.Shared.Component.TreeView
+@using Humate.WASM.Shared.Component.Icon
+@using Humate.WASM.Shared.Component.DataGrid
+@using Humate.WASM.Shared.Component.Toast
+@using Blazored.LocalStorage
+@using Humate.WASM.Common
+@using Humate.WASM.Service
+
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject NavigationManager Navigator
+@inject ScopeService ServiceHelper
+@inject AutoMapper.IMapper Mapper
+@inject IToastService Toaster

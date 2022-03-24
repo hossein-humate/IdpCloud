@@ -1,0 +1,93 @@
+﻿@page "/rolecreate"
+@using System.IO
+@using Humate.WASM.Common
+@using Humate.WASM.Dtos.ApiModel
+@using Humate.WASM.Dtos.ApiModel.Role.Request
+
+<!-- Content header -->
+<div class="flex items-center justify-between px-4 py-4 border-b lg:py-6 dark:border-primary-darker">
+    <h1 class="text-2xl font-semibold">Create New Group/Role</h1>
+    <a href="/rolelist" class="px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark focus:outline-none
+           focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">Back To All Groups and Roles</a>
+</div>
+
+<!-- Content -->
+<div class="m-2">
+    <!-- Table -->
+    <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 pr-10 lg:px-8">
+        <div class="align-middle rounded-tl-lg rounded-tr-lg inline-block w-full py-4 overflow-hidden bg-white dark:bg-darker shadow-lg px-12">
+            <div class="flex justify-between">
+                <h1>Fill this basic information about your Group and Role down here.</h1>
+            </div>
+        </div>
+        <div class="align-middle inline-block min-w-full shadow overflow-hidden bg-white dark:bg-darker shadow-dashboard px-8 pt-3 rounded-bl-lg rounded-br-lg">
+            <div class="h-screen items-center justify-center overflow-y-auto">
+                <div class="grid bg-white dark:bg-darker rounded-lg w-full">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-5 mx-7">
+                        <div class="grid grid-cols-1 ">
+
+                            <label class="md:text-sm text-xs text-black dark:text-light font-semibold">Project Name</label>
+                            <input class="py-2 px-3 rounded-lg text-black border-2 border-primary mt-1 focus:outline-none
+                               focus:ring-2 focus:ring-primary focus:border-transparent" type="text"
+                                   placeholder="What's this Group/Role name? e.g. admin!" @bind-value="_createRequest.Name" />
+                        </div>
+                        <div class="grid grid-cols-1">
+                            <label class="flex items-center relative w-max cursor-pointer select-none">
+                                <span class="text-lg font-bold mr-3">Is Default:</span>
+                                <input type="checkbox" @bind="_createRequest.IsDefault" class="appearance-none transition-colors cursor-pointer w-14 h-7
+                                       rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary
+                                       focus:ring-blue-500 bg-red-500" />
+                                <span class="absolute font-medium text-xs right-1 text-white"> No </span>
+                                <span class="absolute font-medium text-xs right-8 text-white">Yes</span>
+                                <span class="w-8 h-8 right-6 shadow-lg absolute rounded-full transform transition-transform bg-gray-200" />
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center md:gap-8 gap-4 pt-5 pb-5">
+                        <a href="/rolelist" class="px-4 py-2 text-sm text-white rounded-md bg-danger hover:bg-danger-dark focus:outline-none
+           focus:ring focus:ring-danger focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">Cancel</a>
+                        <button @onclick="CreateAsync" type="button"
+                                class="px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark focus:outline-none
+           focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">
+                            Create
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private readonly CreateRequest _createRequest = new CreateRequest();
+
+    private async Task CreateAsync()
+    {
+        try
+        {
+            if (string.IsNullOrEmpty(_createRequest.Name))
+            {
+                Toaster.ShowToast(ToastLevel.Error, "Enter your Group/Role 'Name' first.", "Validation Error");
+                return;
+            }
+            var token = await LocalStorage.GetItemAsStringAsync("Token");
+            _createRequest.SoftwareId = (await LocalStorage.GetItemAsStringAsync("CurrentProject")).ToGuid();
+            var result = await ApiManager.PostAsync<BaseResponse, CreateRequest>(GlobalVariable.ApiBaseAddress,
+                "/api/identity/role/create", _createRequest, token: token);
+            if (result.ResultCode != 0)
+            {
+                Toaster.ShowToast(ToastLevel.Error, result.Message, "Server Error");
+                return;
+            }
+            Toaster.ShowToast(ToastLevel.Info,
+                "Your new Role successfully created.", "Create Role");
+            Navigator.NavigateTo("rolelist");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message + "\n" + ex.StackTrace);
+        }
+    }
+}

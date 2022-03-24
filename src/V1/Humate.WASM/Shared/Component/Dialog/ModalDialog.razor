@@ -1,0 +1,72 @@
+﻿<div class="fixed inset-0 z-30 @(_showModal?"":"hidden")">
+    <!--       background -->
+    <div @onclick="Close"
+         class="@(_showModal?"":"hidden") bg-filter bg-gray-800-opacity opacity-25 fixed inset-0 w-full h-full z-20">
+    </div>
+    <!--          -->
+    <main class="flex flex-col items-center justify-center h-full w-full">
+        <div class="@(_showModal?"":"hidden") modal-wrapper inline-block flex items-center z-30 border-4 rounded border-double">
+            <div class="modal max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl bg-white max-h-screen shadow-lg flex-row rounded relative">
+                <div class="modal-header p-5 bg-gray-900 text-gray-900">
+                    <h5 class="text-white text-xl uppercase">@HeaderText</h5>
+                </div>
+                <div class="modal-body p-5 w-full h-full overflow-y-auto dark:bg-dark">
+                    <p class="text-justify">
+                        @ContentText
+                    </p>
+                </div>
+                <div class="modal-footer py-3 px-5 border0-t text-right bg-gray-100 dark:bg-darker">
+                    <button class="px-4 py-2 text-sm text-white rounded-md bg-secondary hover:bg-info-secondary
+                                            focus:outline-none focus:ring focus:ring-secondary focus:ring-offset-1
+                            focus:ring-offset-white dark:focus:ring-offset-dark" @onclick="Close">
+                        @CancelText
+                    </button>
+                    <button class="px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark
+                                            focus:outline-none focus:ring focus:ring-primary focus:ring-offset-1
+                            focus:ring-offset-white dark:focus:ring-offset-dark" @onclick="ConfirmClick">
+                        @ConfirmText
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+@code {
+    [Parameter]
+    public string HeaderText { get; set; }
+
+    [Parameter]
+    public string ContentText { get; set; }
+
+    [Parameter]
+    public EventCallback<object> OnConfirmCallback { get; set; }
+
+    [Parameter]
+    public string ConfirmText { get; set; }
+
+    [Parameter]
+    public string CancelText { get; set; }
+
+    private bool _showModal = false;
+    private object _inputObject = new object();
+
+    private void Close()
+    {
+        _showModal = false;
+    }
+
+    private async Task ConfirmClick()
+    {
+        _showModal = false;
+        await OnConfirmCallback.InvokeAsync(_inputObject);
+    }
+
+    public void Show(object inputObject = default)
+    {
+        _showModal = true;
+        _inputObject = inputObject;
+        StateHasChanged();
+    }
+}

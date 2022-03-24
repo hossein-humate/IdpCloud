@@ -1,0 +1,2442 @@
+﻿[
+  {
+    "CountryId": 1,
+    "TwoCharacterCode": "AW",
+    "ThreeCharacterCode": "ABW",
+    "CallingCode": "+297",
+    "CommonName": "Aruba",
+    "OfficialName": "Aruba",
+    "CommonNativeName": "Aruba",
+    "OfficialNativeName": "Aruba"
+  },
+  {
+    "CountryId": 2,
+    "TwoCharacterCode": "AF",
+    "ThreeCharacterCode": "AFG",
+    "CallingCode": "+93",
+    "CommonName": "Afghanistan",
+    "OfficialName": "Islamic Republic of Afghanistan",
+    "CommonNativeName": "افغانستان",
+    "OfficialNativeName": "جمهوری اسلامی افغانستان"
+  },
+  {
+    "CountryId": 3,
+    "TwoCharacterCode": "AO",
+    "ThreeCharacterCode": "AGO",
+    "CallingCode": "+244",
+    "CommonName": "Angola",
+    "OfficialName": "Republic of Angola",
+    "CommonNativeName": "Angola",
+    "OfficialNativeName": "República de Angola"
+  },
+  {
+    "CountryId": 4,
+    "TwoCharacterCode": "AI",
+    "ThreeCharacterCode": "AIA",
+    "CallingCode": "+1264",
+    "CommonName": "Anguilla",
+    "OfficialName": "Anguilla",
+    "CommonNativeName": "Anguilla",
+    "OfficialNativeName": "Anguilla"
+  },
+  {
+    "CountryId": 5,
+    "TwoCharacterCode": "AX",
+    "ThreeCharacterCode": "ALA",
+    "CallingCode": "+358",
+    "CommonName": "Åland Islands",
+    "OfficialName": "Åland Islands",
+    "CommonNativeName": "Åland",
+    "OfficialNativeName": "Landskapet Åland"
+  },
+  {
+    "CountryId": 6,
+    "TwoCharacterCode": "AL",
+    "ThreeCharacterCode": "ALB",
+    "CallingCode": "+355",
+    "CommonName": "Albania",
+    "OfficialName": "Republic of Albania",
+    "CommonNativeName": "Shqipëria",
+    "OfficialNativeName": "Republika e Shqipërisë"
+  },
+  {
+    "CountryId": 7,
+    "TwoCharacterCode": "AD",
+    "ThreeCharacterCode": "AND",
+    "CallingCode": "+376",
+    "CommonName": "Andorra",
+    "OfficialName": "Principality of Andorra",
+    "CommonNativeName": "Andorra",
+    "OfficialNativeName": "Principat d'Andorra"
+  },
+  {
+    "CountryId": 8,
+    "TwoCharacterCode": "AE",
+    "ThreeCharacterCode": "ARE",
+    "CallingCode": "+971",
+    "CommonName": "United Arab Emirates",
+    "OfficialName": "United Arab Emirates",
+    "CommonNativeName": "دولة الإمارات العربية المتحدة",
+    "OfficialNativeName": "الإمارات العربية المتحدة"
+  },
+  {
+    "CountryId": 9,
+    "TwoCharacterCode": "AR",
+    "ThreeCharacterCode": "ARG",
+    "CallingCode": "+54",
+    "CommonName": "Argentina",
+    "OfficialName": "Argentine Republic",
+    "CommonNativeName": "Argentina",
+    "OfficialNativeName": "Argentine Republic"
+  },
+  {
+    "CountryId": 10,
+    "TwoCharacterCode": "AM",
+    "ThreeCharacterCode": "ARM",
+    "CallingCode": "+374",
+    "CommonName": "Armenia",
+    "OfficialName": "Republic of Armenia",
+    "CommonNativeName": "Հայաստան",
+    "OfficialNativeName": "Հայաստանի Հանրապետություն"
+  },
+  {
+    "CountryId": 11,
+    "TwoCharacterCode": "AS",
+    "ThreeCharacterCode": "ASM",
+    "CallingCode": "+1684",
+    "CommonName": "American Samoa",
+    "OfficialName": "American Samoa",
+    "CommonNativeName": "American Samoa",
+    "OfficialNativeName": "American Samoa"
+  },
+  {
+    "CountryId": 12,
+    "TwoCharacterCode": "AQ",
+    "ThreeCharacterCode": "ATA",
+    "CallingCode": "+672",
+    "CommonName": "Antarctica",
+    "OfficialName": "Antarctica",
+    "CommonNativeName": "",
+    "OfficialNativeName": ""
+  },
+  {
+    "CountryId": 13,
+    "TwoCharacterCode": "AG",
+    "ThreeCharacterCode": "ATG",
+    "CallingCode": "+1268",
+    "CommonName": "Antigua and Barbuda",
+    "OfficialName": "Antigua and Barbuda",
+    "CommonNativeName": "Antigua and Barbuda",
+    "OfficialNativeName": "Antigua and Barbuda"
+  },
+  {
+    "CountryId": 14,
+    "TwoCharacterCode": "AU",
+    "ThreeCharacterCode": "AUS",
+    "CallingCode": "+61",
+    "CommonName": "Australia",
+    "OfficialName": "Commonwealth of Australia",
+    "CommonNativeName": "Australia",
+    "OfficialNativeName": "Commonwealth of Australia"
+  },
+  {
+    "CountryId": 15,
+    "TwoCharacterCode": "AT",
+    "ThreeCharacterCode": "AUT",
+    "CallingCode": "+43",
+    "CommonName": "Austria",
+    "OfficialName": "Republic of Austria",
+    "CommonNativeName": "Österreich",
+    "OfficialNativeName": "Republik Österreich"
+  },
+  {
+    "CountryId": 16,
+    "TwoCharacterCode": "AZ",
+    "ThreeCharacterCode": "AZE",
+    "CallingCode": "+994",
+    "CommonName": "Azerbaijan",
+    "OfficialName": "Republic of Azerbaijan",
+    "CommonNativeName": "Azərbaycan",
+    "OfficialNativeName": "Azərbaycan Respublikası"
+  },
+  {
+    "CountryId": 17,
+    "TwoCharacterCode": "BI",
+    "ThreeCharacterCode": "BDI",
+    "CallingCode": "+257",
+    "CommonName": "Burundi",
+    "OfficialName": "Republic of Burundi",
+    "CommonNativeName": "Burundi",
+    "OfficialNativeName": "République du Burundi"
+  },
+  {
+    "CountryId": 18,
+    "TwoCharacterCode": "BE",
+    "ThreeCharacterCode": "BEL",
+    "CallingCode": "+32",
+    "CommonName": "Belgium",
+    "OfficialName": "Kingdom of Belgium",
+    "CommonNativeName": "Belgien",
+    "OfficialNativeName": "Königreich Belgien"
+  },
+  {
+    "CountryId": 19,
+    "TwoCharacterCode": "BJ",
+    "ThreeCharacterCode": "BEN",
+    "CallingCode": "+229",
+    "CommonName": "Benin",
+    "OfficialName": "Republic of Benin",
+    "CommonNativeName": "Bénin",
+    "OfficialNativeName": "République du Bénin"
+  },
+  {
+    "CountryId": 20,
+    "TwoCharacterCode": "BF",
+    "ThreeCharacterCode": "BFA",
+    "CallingCode": "+226",
+    "CommonName": "Burkina Faso",
+    "OfficialName": "Burkina Faso",
+    "CommonNativeName": "Burkina Faso",
+    "OfficialNativeName": "République du Burkina"
+  },
+  {
+    "CountryId": 21,
+    "TwoCharacterCode": "BD",
+    "ThreeCharacterCode": "BGD",
+    "CallingCode": "+880",
+    "CommonName": "Bangladesh",
+    "OfficialName": "People's Republic of Bangladesh",
+    "CommonNativeName": "বাংলাদেশ",
+    "OfficialNativeName": "বাংলাদেশ গণপ্রজাতন্ত্রী"
+  },
+  {
+    "CountryId": 22,
+    "TwoCharacterCode": "BG",
+    "ThreeCharacterCode": "BGR",
+    "CallingCode": "+359",
+    "CommonName": "Bulgaria",
+    "OfficialName": "Republic of Bulgaria",
+    "CommonNativeName": "България",
+    "OfficialNativeName": "Република България"
+  },
+  {
+    "CountryId": 23,
+    "TwoCharacterCode": "BH",
+    "ThreeCharacterCode": "BHR",
+    "CallingCode": "+973",
+    "CommonName": "Bahrain",
+    "OfficialName": "Kingdom of Bahrain",
+    "CommonNativeName": "‏البحرين",
+    "OfficialNativeName": "مملكة البحرين"
+  },
+  {
+    "CountryId": 24,
+    "TwoCharacterCode": "BS",
+    "ThreeCharacterCode": "BHS",
+    "CallingCode": "+1242",
+    "CommonName": "Bahamas",
+    "OfficialName": "Commonwealth of the Bahamas",
+    "CommonNativeName": "Bahamas",
+    "OfficialNativeName": "Commonwealth of the Bahamas"
+  },
+  {
+    "CountryId": 25,
+    "TwoCharacterCode": "BA",
+    "ThreeCharacterCode": "BIH",
+    "CallingCode": "+387",
+    "CommonName": "Bosnia and Herzegovina",
+    "OfficialName": "Bosnia and Herzegovina",
+    "CommonNativeName": "Bosna i Hercegovina",
+    "OfficialNativeName": "Bosna i Hercegovina"
+  },
+  {
+    "CountryId": 26,
+    "TwoCharacterCode": "BL",
+    "ThreeCharacterCode": "BLM",
+    "CallingCode": "+590",
+    "CommonName": "Saint Barthélemy",
+    "OfficialName": "Collectivity of Saint Barthélemy",
+    "CommonNativeName": "Saint-Barthélemy",
+    "OfficialNativeName": "Collectivité de Saint-Barthélemy"
+  },
+  {
+    "CountryId": 27,
+    "TwoCharacterCode": "BY",
+    "ThreeCharacterCode": "BLR",
+    "CallingCode": "+375",
+    "CommonName": "Belarus",
+    "OfficialName": "Republic of Belarus",
+    "CommonNativeName": "Белару́сь",
+    "OfficialNativeName": "Рэспубліка Беларусь"
+  },
+  {
+    "CountryId": 28,
+    "TwoCharacterCode": "BZ",
+    "ThreeCharacterCode": "BLZ",
+    "CallingCode": "+501",
+    "CommonName": "Belize",
+    "OfficialName": "Belize",
+    "CommonNativeName": "Belize",
+    "OfficialNativeName": "Belize"
+  },
+  {
+    "CountryId": 29,
+    "TwoCharacterCode": "BM",
+    "ThreeCharacterCode": "BMU",
+    "CallingCode": "+1441",
+    "CommonName": "Bermuda",
+    "OfficialName": "Bermuda",
+    "CommonNativeName": "Bermuda",
+    "OfficialNativeName": "Bermuda"
+  },
+  {
+    "CountryId": 30,
+    "TwoCharacterCode": "BO",
+    "ThreeCharacterCode": "BOL",
+    "CallingCode": "+591",
+    "CommonName": "Bolivia",
+    "OfficialName": "Plurinational State of Bolivia",
+    "CommonNativeName": "Wuliwya",
+    "OfficialNativeName": "Wuliwya Suyu"
+  },
+  {
+    "CountryId": 31,
+    "TwoCharacterCode": "BR",
+    "ThreeCharacterCode": "BRA",
+    "CallingCode": "+55",
+    "CommonName": "Brazil",
+    "OfficialName": "Federative Republic of Brazil",
+    "CommonNativeName": "Brasil",
+    "OfficialNativeName": "República Federativa do Brasil"
+  },
+  {
+    "CountryId": 32,
+    "TwoCharacterCode": "BB",
+    "ThreeCharacterCode": "BRB",
+    "CallingCode": "+1246",
+    "CommonName": "Barbados",
+    "OfficialName": "Barbados",
+    "CommonNativeName": "Barbados",
+    "OfficialNativeName": "Barbados"
+  },
+  {
+    "CountryId": 33,
+    "TwoCharacterCode": "BN",
+    "ThreeCharacterCode": "BRN",
+    "CallingCode": "+673",
+    "CommonName": "Brunei",
+    "OfficialName": "Nation of Brunei, Abode of Peace",
+    "CommonNativeName": "Negara Brunei Darussalam",
+    "OfficialNativeName": "Nation of Brunei, Abode Damai"
+  },
+  {
+    "CountryId": 34,
+    "TwoCharacterCode": "BT",
+    "ThreeCharacterCode": "BTN",
+    "CallingCode": "+975",
+    "CommonName": "Bhutan",
+    "OfficialName": "Kingdom of Bhutan",
+    "CommonNativeName": "འབྲུག་ཡུལ་",
+    "OfficialNativeName": "འབྲུག་རྒྱལ་ཁབ་"
+  },
+  {
+    "CountryId": 35,
+    "TwoCharacterCode": "BW",
+    "ThreeCharacterCode": "BWA",
+    "CallingCode": "+267",
+    "CommonName": "Botswana",
+    "OfficialName": "Republic of Botswana",
+    "CommonNativeName": "Botswana",
+    "OfficialNativeName": "Republic of Botswana"
+  },
+  {
+    "CountryId": 36,
+    "TwoCharacterCode": "CF",
+    "ThreeCharacterCode": "CAF",
+    "CallingCode": "+236",
+    "CommonName": "Central African Republic",
+    "OfficialName": "Central African Republic",
+    "CommonNativeName": "République centrafricaine",
+    "OfficialNativeName": "République centrafricaine"
+  },
+  {
+    "CountryId": 37,
+    "TwoCharacterCode": "CA",
+    "ThreeCharacterCode": "CAN",
+    "CallingCode": "+1",
+    "CommonName": "Canada",
+    "OfficialName": "Canada",
+    "CommonNativeName": "Canada",
+    "OfficialNativeName": "Canada"
+  },
+  {
+    "CountryId": 38,
+    "TwoCharacterCode": "CC",
+    "ThreeCharacterCode": "CCK",
+    "CallingCode": "+61",
+    "CommonName": "Cocos (Keeling) Islands",
+    "OfficialName": "Territory of the Cocos (Keeling) Islands",
+    "CommonNativeName": "Cocos (Keeling) Islands",
+    "OfficialNativeName": "Territory of the Cocos (Keeling) Islands"
+  },
+  {
+    "CountryId": 39,
+    "TwoCharacterCode": "CH",
+    "ThreeCharacterCode": "CHE",
+    "CallingCode": "+41",
+    "CommonName": "Switzerland",
+    "OfficialName": "Swiss Confederation",
+    "CommonNativeName": "Suisse",
+    "OfficialNativeName": "Confédération suisse"
+  },
+  {
+    "CountryId": 40,
+    "TwoCharacterCode": "CL",
+    "ThreeCharacterCode": "CHL",
+    "CallingCode": "+56",
+    "CommonName": "Chile",
+    "OfficialName": "Republic of Chile",
+    "CommonNativeName": "Chile",
+    "OfficialNativeName": "República de Chile"
+  },
+  {
+    "CountryId": 41,
+    "TwoCharacterCode": "CN",
+    "ThreeCharacterCode": "CHN",
+    "CallingCode": "+86",
+    "CommonName": "China",
+    "OfficialName": "People's Republic of China",
+    "CommonNativeName": "中国",
+    "OfficialNativeName": "中华人民共和国"
+  },
+  {
+    "CountryId": 42,
+    "TwoCharacterCode": "CI",
+    "ThreeCharacterCode": "CIV",
+    "CallingCode": "+225",
+    "CommonName": "Ivory Coast",
+    "OfficialName": "Republic of Côte d'Ivoire",
+    "CommonNativeName": "Côte d'Ivoire",
+    "OfficialNativeName": "République de Côte d'Ivoire"
+  },
+  {
+    "CountryId": 43,
+    "TwoCharacterCode": "CM",
+    "ThreeCharacterCode": "CMR",
+    "CallingCode": "+237",
+    "CommonName": "Cameroon",
+    "OfficialName": "Republic of Cameroon",
+    "CommonNativeName": "Cameroon",
+    "OfficialNativeName": "Republic of Cameroon"
+  },
+  {
+    "CountryId": 44,
+    "TwoCharacterCode": "CD",
+    "ThreeCharacterCode": "COD",
+    "CallingCode": "+243",
+    "CommonName": "DR Congo",
+    "OfficialName": "Democratic Republic of the Congo",
+    "CommonNativeName": "RD Congo",
+    "OfficialNativeName": "République démocratique du Congo"
+  },
+  {
+    "CountryId": 45,
+    "TwoCharacterCode": "CG",
+    "ThreeCharacterCode": "COG",
+    "CallingCode": "+242",
+    "CommonName": "Republic of the Congo",
+    "OfficialName": "Republic of the Congo",
+    "CommonNativeName": "République du Congo",
+    "OfficialNativeName": "République du Congo"
+  },
+  {
+    "CountryId": 46,
+    "TwoCharacterCode": "CK",
+    "ThreeCharacterCode": "COK",
+    "CallingCode": "+682",
+    "CommonName": "Cook Islands",
+    "OfficialName": "Cook Islands",
+    "CommonNativeName": "Cook Islands",
+    "OfficialNativeName": "Cook Islands"
+  },
+  {
+    "CountryId": 47,
+    "TwoCharacterCode": "CO",
+    "ThreeCharacterCode": "COL",
+    "CallingCode": "+57",
+    "CommonName": "Colombia",
+    "OfficialName": "Republic of Colombia",
+    "CommonNativeName": "Colombia",
+    "OfficialNativeName": "República de Colombia"
+  },
+  {
+    "CountryId": 48,
+    "TwoCharacterCode": "KM",
+    "ThreeCharacterCode": "COM",
+    "CallingCode": "+269",
+    "CommonName": "Comoros",
+    "OfficialName": "Union of the Comoros",
+    "CommonNativeName": "القمر‎",
+    "OfficialNativeName": "الاتحاد القمري"
+  },
+  {
+    "CountryId": 49,
+    "TwoCharacterCode": "CV",
+    "ThreeCharacterCode": "CPV",
+    "CallingCode": "+238",
+    "CommonName": "Cape Verde",
+    "OfficialName": "Republic of Cabo Verde",
+    "CommonNativeName": "Cabo Verde",
+    "OfficialNativeName": "República de Cabo Verde"
+  },
+  {
+    "CountryId": 50,
+    "TwoCharacterCode": "CR",
+    "ThreeCharacterCode": "CRI",
+    "CallingCode": "+506",
+    "CommonName": "Costa Rica",
+    "OfficialName": "Republic of Costa Rica",
+    "CommonNativeName": "Costa Rica",
+    "OfficialNativeName": "República de Costa Rica"
+  },
+  {
+    "CountryId": 51,
+    "TwoCharacterCode": "CU",
+    "ThreeCharacterCode": "CUB",
+    "CallingCode": "+53",
+    "CommonName": "Cuba",
+    "OfficialName": "Republic of Cuba",
+    "CommonNativeName": "Cuba",
+    "OfficialNativeName": "República de Cuba"
+  },
+  {
+    "CountryId": 52,
+    "TwoCharacterCode": "CW",
+    "ThreeCharacterCode": "CUW",
+    "CallingCode": "+5999",
+    "CommonName": "Curaçao",
+    "OfficialName": "Country of Curaçao",
+    "CommonNativeName": "Curaçao",
+    "OfficialNativeName": "Country of Curaçao"
+  },
+  {
+    "CountryId": 53,
+    "TwoCharacterCode": "CX",
+    "ThreeCharacterCode": "CXR",
+    "CallingCode": "+61",
+    "CommonName": "Christmas Island",
+    "OfficialName": "Territory of Christmas Island",
+    "CommonNativeName": "Christmas Island",
+    "OfficialNativeName": "Territory of Christmas Island"
+  },
+  {
+    "CountryId": 54,
+    "TwoCharacterCode": "KY",
+    "ThreeCharacterCode": "CYM",
+    "CallingCode": "+1345",
+    "CommonName": "Cayman Islands",
+    "OfficialName": "Cayman Islands",
+    "CommonNativeName": "Cayman Islands",
+    "OfficialNativeName": "Cayman Islands"
+  },
+  {
+    "CountryId": 55,
+    "TwoCharacterCode": "CY",
+    "ThreeCharacterCode": "CYP",
+    "CallingCode": "+357",
+    "CommonName": "Cyprus",
+    "OfficialName": "Republic of Cyprus",
+    "CommonNativeName": "Κύπρος",
+    "OfficialNativeName": "Δημοκρατία της Κύπρος"
+  },
+  {
+    "CountryId": 56,
+    "TwoCharacterCode": "CZ",
+    "ThreeCharacterCode": "CZE",
+    "CallingCode": "+420",
+    "CommonName": "Czechia",
+    "OfficialName": "Czech Republic",
+    "CommonNativeName": "Česko",
+    "OfficialNativeName": "česká republika"
+  },
+  {
+    "CountryId": 57,
+    "TwoCharacterCode": "DE",
+    "ThreeCharacterCode": "DEU",
+    "CallingCode": "+49",
+    "CommonName": "Germany",
+    "OfficialName": "Federal Republic of Germany",
+    "CommonNativeName": "Deutschland",
+    "OfficialNativeName": "Bundesrepublik Deutschland"
+  },
+  {
+    "CountryId": 58,
+    "TwoCharacterCode": "DJ",
+    "ThreeCharacterCode": "DJI",
+    "CallingCode": "+253",
+    "CommonName": "Djibouti",
+    "OfficialName": "Republic of Djibouti",
+    "CommonNativeName": "جيبوتي‎",
+    "OfficialNativeName": "جمهورية جيبوتي"
+  },
+  {
+    "CountryId": 59,
+    "TwoCharacterCode": "DM",
+    "ThreeCharacterCode": "DMA",
+    "CallingCode": "+1767",
+    "CommonName": "Dominica",
+    "OfficialName": "Commonwealth of Dominica",
+    "CommonNativeName": "Dominica",
+    "OfficialNativeName": "Commonwealth of Dominica"
+  },
+  {
+    "CountryId": 60,
+    "TwoCharacterCode": "DK",
+    "ThreeCharacterCode": "DNK",
+    "CallingCode": "+45",
+    "CommonName": "Denmark",
+    "OfficialName": "Kingdom of Denmark",
+    "CommonNativeName": "Danmark",
+    "OfficialNativeName": "Kongeriget Danmark"
+  },
+  {
+    "CountryId": 61,
+    "TwoCharacterCode": "DO",
+    "ThreeCharacterCode": "DOM",
+    "CallingCode": "+1809",
+    "CommonName": "Dominican Republic",
+    "OfficialName": "Dominican Republic",
+    "CommonNativeName": "República Dominicana",
+    "OfficialNativeName": "República Dominicana"
+  },
+  {
+    "CountryId": 62,
+    "TwoCharacterCode": "DZ",
+    "ThreeCharacterCode": "DZA",
+    "CallingCode": "+213",
+    "CommonName": "Algeria",
+    "OfficialName": "People's Democratic Republic of Algeria",
+    "CommonNativeName": "الجزائر",
+    "OfficialNativeName": "الجمهورية الديمقراطية الشعبية الجزائرية"
+  },
+  {
+    "CountryId": 63,
+    "TwoCharacterCode": "EC",
+    "ThreeCharacterCode": "ECU",
+    "CallingCode": "+593",
+    "CommonName": "Ecuador",
+    "OfficialName": "Republic of Ecuador",
+    "CommonNativeName": "Ecuador",
+    "OfficialNativeName": "República del Ecuador"
+  },
+  {
+    "CountryId": 64,
+    "TwoCharacterCode": "EG",
+    "ThreeCharacterCode": "EGY",
+    "CallingCode": "+20",
+    "CommonName": "Egypt",
+    "OfficialName": "Arab Republic of Egypt",
+    "CommonNativeName": "مصر",
+    "OfficialNativeName": "جمهورية مصر العربية"
+  },
+  {
+    "CountryId": 65,
+    "TwoCharacterCode": "ER",
+    "ThreeCharacterCode": "ERI",
+    "CallingCode": "+291",
+    "CommonName": "Eritrea",
+    "OfficialName": "State of Eritrea",
+    "CommonNativeName": "إرتريا‎",
+    "OfficialNativeName": "دولة إرتريا"
+  },
+  {
+    "CountryId": 66,
+    "TwoCharacterCode": "EH",
+    "ThreeCharacterCode": "ESH",
+    "CallingCode": "+212",
+    "CommonName": "Western Sahara",
+    "OfficialName": "Sahrawi Arab Democratic Republic",
+    "CommonNativeName": "Western Sahara",
+    "OfficialNativeName": "Sahrawi Arab Democratic Republic"
+  },
+  {
+    "CountryId": 67,
+    "TwoCharacterCode": "ES",
+    "ThreeCharacterCode": "ESP",
+    "CallingCode": "+34",
+    "CommonName": "Spain",
+    "OfficialName": "Kingdom of Spain",
+    "CommonNativeName": "Espanya",
+    "OfficialNativeName": "Regne d'Espanya"
+  },
+  {
+    "CountryId": 68,
+    "TwoCharacterCode": "EE",
+    "ThreeCharacterCode": "EST",
+    "CallingCode": "+372",
+    "CommonName": "Estonia",
+    "OfficialName": "Republic of Estonia",
+    "CommonNativeName": "Eesti",
+    "OfficialNativeName": "Eesti Vabariik"
+  },
+  {
+    "CountryId": 69,
+    "TwoCharacterCode": "ET",
+    "ThreeCharacterCode": "ETH",
+    "CallingCode": "+251",
+    "CommonName": "Ethiopia",
+    "OfficialName": "Federal Democratic Republic of Ethiopia",
+    "CommonNativeName": "ኢትዮጵያ",
+    "OfficialNativeName": "የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ"
+  },
+  {
+    "CountryId": 70,
+    "TwoCharacterCode": "FI",
+    "ThreeCharacterCode": "FIN",
+    "CallingCode": "+358",
+    "CommonName": "Finland",
+    "OfficialName": "Republic of Finland",
+    "CommonNativeName": "Suomi",
+    "OfficialNativeName": "Suomen tasavalta"
+  },
+  {
+    "CountryId": 71,
+    "TwoCharacterCode": "FJ",
+    "ThreeCharacterCode": "FJI",
+    "CallingCode": "+679",
+    "CommonName": "Fiji",
+    "OfficialName": "Republic of Fiji",
+    "CommonNativeName": "Fiji",
+    "OfficialNativeName": "Republic of Fiji"
+  },
+  {
+    "CountryId": 72,
+    "TwoCharacterCode": "FK",
+    "ThreeCharacterCode": "FLK",
+    "CallingCode": "+500",
+    "CommonName": "Falkland Islands",
+    "OfficialName": "Falkland Islands",
+    "CommonNativeName": "Falkland Islands",
+    "OfficialNativeName": "Falkland Islands"
+  },
+  {
+    "CountryId": 73,
+    "TwoCharacterCode": "FR",
+    "ThreeCharacterCode": "FRA",
+    "CallingCode": "+33",
+    "CommonName": "France",
+    "OfficialName": "French Republic",
+    "CommonNativeName": "France",
+    "OfficialNativeName": "République française"
+  },
+  {
+    "CountryId": 74,
+    "TwoCharacterCode": "FO",
+    "ThreeCharacterCode": "FRO",
+    "CallingCode": "+298",
+    "CommonName": "Faroe Islands",
+    "OfficialName": "Faroe Islands",
+    "CommonNativeName": "Færøerne",
+    "OfficialNativeName": "Færøerne"
+  },
+  {
+    "CountryId": 75,
+    "TwoCharacterCode": "FM",
+    "ThreeCharacterCode": "FSM",
+    "CallingCode": "+691",
+    "CommonName": "Micronesia",
+    "OfficialName": "Federated States of Micronesia",
+    "CommonNativeName": "Micronesia",
+    "OfficialNativeName": "Federated States of Micronesia"
+  },
+  {
+    "CountryId": 76,
+    "TwoCharacterCode": "GA",
+    "ThreeCharacterCode": "GAB",
+    "CallingCode": "+241",
+    "CommonName": "Gabon",
+    "OfficialName": "Gabonese Republic",
+    "CommonNativeName": "Gabon",
+    "OfficialNativeName": "République gabonaise"
+  },
+  {
+    "CountryId": 77,
+    "TwoCharacterCode": "GB",
+    "ThreeCharacterCode": "GBR",
+    "CallingCode": "+44",
+    "CommonName": "United Kingdom",
+    "OfficialName": "United Kingdom of Great Britain and Northern Ireland",
+    "CommonNativeName": "United Kingdom",
+    "OfficialNativeName": "United Kingdom of Great Britain and Northern Ireland"
+  },
+  {
+    "CountryId": 78,
+    "TwoCharacterCode": "GE",
+    "ThreeCharacterCode": "GEO",
+    "CallingCode": "+995",
+    "CommonName": "Georgia",
+    "OfficialName": "Georgia",
+    "CommonNativeName": "საქართველო",
+    "OfficialNativeName": "საქართველო"
+  },
+  {
+    "CountryId": 79,
+    "TwoCharacterCode": "GG",
+    "ThreeCharacterCode": "GGY",
+    "CallingCode": "+44",
+    "CommonName": "Guernsey",
+    "OfficialName": "Bailiwick of Guernsey",
+    "CommonNativeName": "Guernsey",
+    "OfficialNativeName": "Bailiwick of Guernsey"
+  },
+  {
+    "CountryId": 80,
+    "TwoCharacterCode": "GH",
+    "ThreeCharacterCode": "GHA",
+    "CallingCode": "+233",
+    "CommonName": "Ghana",
+    "OfficialName": "Republic of Ghana",
+    "CommonNativeName": "Ghana",
+    "OfficialNativeName": "Republic of Ghana"
+  },
+  {
+    "CountryId": 81,
+    "TwoCharacterCode": "GI",
+    "ThreeCharacterCode": "GIB",
+    "CallingCode": "+350",
+    "CommonName": "Gibraltar",
+    "OfficialName": "Gibraltar",
+    "CommonNativeName": "Gibraltar",
+    "OfficialNativeName": "Gibraltar"
+  },
+  {
+    "CountryId": 82,
+    "TwoCharacterCode": "GN",
+    "ThreeCharacterCode": "GIN",
+    "CallingCode": "+224",
+    "CommonName": "Guinea",
+    "OfficialName": "Republic of Guinea",
+    "CommonNativeName": "Guinée",
+    "OfficialNativeName": "République de Guinée"
+  },
+  {
+    "CountryId": 83,
+    "TwoCharacterCode": "GP",
+    "ThreeCharacterCode": "GLP",
+    "CallingCode": "+590",
+    "CommonName": "Guadeloupe",
+    "OfficialName": "Guadeloupe",
+    "CommonNativeName": "Guadeloupe",
+    "OfficialNativeName": "Guadeloupe"
+  },
+  {
+    "CountryId": 84,
+    "TwoCharacterCode": "GM",
+    "ThreeCharacterCode": "GMB",
+    "CallingCode": "+220",
+    "CommonName": "Gambia",
+    "OfficialName": "Republic of the Gambia",
+    "CommonNativeName": "Gambia",
+    "OfficialNativeName": "Republic of the Gambia"
+  },
+  {
+    "CountryId": 85,
+    "TwoCharacterCode": "GW",
+    "ThreeCharacterCode": "GNB",
+    "CallingCode": "+245",
+    "CommonName": "Guinea-Bissau",
+    "OfficialName": "Republic of Guinea-Bissau",
+    "CommonNativeName": "Guiné-Bissau",
+    "OfficialNativeName": "República da Guiné-Bissau"
+  },
+  {
+    "CountryId": 86,
+    "TwoCharacterCode": "GQ",
+    "ThreeCharacterCode": "GNQ",
+    "CallingCode": "+240",
+    "CommonName": "Equatorial Guinea",
+    "OfficialName": "Republic of Equatorial Guinea",
+    "CommonNativeName": "Guinée équatoriale",
+    "OfficialNativeName": "République de la Guinée Équatoriale"
+  },
+  {
+    "CountryId": 87,
+    "TwoCharacterCode": "GR",
+    "ThreeCharacterCode": "GRC",
+    "CallingCode": "+30",
+    "CommonName": "Greece",
+    "OfficialName": "Hellenic Republic",
+    "CommonNativeName": "Ελλάδα",
+    "OfficialNativeName": "Ελληνική Δημοκρατία"
+  },
+  {
+    "CountryId": 88,
+    "TwoCharacterCode": "GD",
+    "ThreeCharacterCode": "GRD",
+    "CallingCode": "+1473",
+    "CommonName": "Grenada",
+    "OfficialName": "Grenada",
+    "CommonNativeName": "Grenada",
+    "OfficialNativeName": "Grenada"
+  },
+  {
+    "CountryId": 89,
+    "TwoCharacterCode": "GL",
+    "ThreeCharacterCode": "GRL",
+    "CallingCode": "+299",
+    "CommonName": "Greenland",
+    "OfficialName": "Greenland",
+    "CommonNativeName": "Kalaallit Nunaat",
+    "OfficialNativeName": "Kalaallit Nunaat"
+  },
+  {
+    "CountryId": 90,
+    "TwoCharacterCode": "GT",
+    "ThreeCharacterCode": "GTM",
+    "CallingCode": "+502",
+    "CommonName": "Guatemala",
+    "OfficialName": "Republic of Guatemala",
+    "CommonNativeName": "Guatemala",
+    "OfficialNativeName": "República de Guatemala"
+  },
+  {
+    "CountryId": 91,
+    "TwoCharacterCode": "GF",
+    "ThreeCharacterCode": "GUF",
+    "CallingCode": "+594",
+    "CommonName": "French Guiana",
+    "OfficialName": "Guiana",
+    "CommonNativeName": "Guyane française",
+    "OfficialNativeName": "Guyanes"
+  },
+  {
+    "CountryId": 92,
+    "TwoCharacterCode": "GU",
+    "ThreeCharacterCode": "GUM",
+    "CallingCode": "+1671",
+    "CommonName": "Guam",
+    "OfficialName": "Guam",
+    "CommonNativeName": "Guåhån",
+    "OfficialNativeName": "Guåhån"
+  },
+  {
+    "CountryId": 93,
+    "TwoCharacterCode": "GY",
+    "ThreeCharacterCode": "GUY",
+    "CallingCode": "+592",
+    "CommonName": "Guyana",
+    "OfficialName": "Co-operative Republic of Guyana",
+    "CommonNativeName": "Guyana",
+    "OfficialNativeName": "Co-operative Republic of Guyana"
+  },
+  {
+    "CountryId": 94,
+    "TwoCharacterCode": "HK",
+    "ThreeCharacterCode": "HKG",
+    "CallingCode": "+852",
+    "CommonName": "Hong Kong",
+    "OfficialName": "Hong Kong Special Administrative Region of the People's Republic of China",
+    "CommonNativeName": "Hong Kong",
+    "OfficialNativeName": "Hong Kong Special Administrative Region of the People's Republic of China"
+  },
+  {
+    "CountryId": 95,
+    "TwoCharacterCode": "HN",
+    "ThreeCharacterCode": "HND",
+    "CallingCode": "+504",
+    "CommonName": "Honduras",
+    "OfficialName": "Republic of Honduras",
+    "CommonNativeName": "Honduras",
+    "OfficialNativeName": "República de Honduras"
+  },
+  {
+    "CountryId": 96,
+    "TwoCharacterCode": "HR",
+    "ThreeCharacterCode": "HRV",
+    "CallingCode": "+385",
+    "CommonName": "Croatia",
+    "OfficialName": "Republic of Croatia",
+    "CommonNativeName": "Hrvatska",
+    "OfficialNativeName": "Republika Hrvatska"
+  },
+  {
+    "CountryId": 97,
+    "TwoCharacterCode": "HT",
+    "ThreeCharacterCode": "HTI",
+    "CallingCode": "+509",
+    "CommonName": "Haiti",
+    "OfficialName": "Republic of Haiti",
+    "CommonNativeName": "Haïti",
+    "OfficialNativeName": "République d'Haïti"
+  },
+  {
+    "CountryId": 98,
+    "TwoCharacterCode": "HU",
+    "ThreeCharacterCode": "HUN",
+    "CallingCode": "+36",
+    "CommonName": "Hungary",
+    "OfficialName": "Hungary",
+    "CommonNativeName": "Magyarország",
+    "OfficialNativeName": "Magyarország"
+  },
+  {
+    "CountryId": 99,
+    "TwoCharacterCode": "ID",
+    "ThreeCharacterCode": "IDN",
+    "CallingCode": "+62",
+    "CommonName": "Indonesia",
+    "OfficialName": "Republic of Indonesia",
+    "CommonNativeName": "Indonesia",
+    "OfficialNativeName": "Republik Indonesia"
+  },
+  {
+    "CountryId": 100,
+    "TwoCharacterCode": "IM",
+    "ThreeCharacterCode": "IMN",
+    "CallingCode": "+44",
+    "CommonName": "Isle of Man",
+    "OfficialName": "Isle of Man",
+    "CommonNativeName": "Isle of Man",
+    "OfficialNativeName": "Isle of Man"
+  },
+  {
+    "CountryId": 101,
+    "TwoCharacterCode": "IN",
+    "ThreeCharacterCode": "IND",
+    "CallingCode": "+91",
+    "CommonName": "India",
+    "OfficialName": "Republic of India",
+    "CommonNativeName": "India",
+    "OfficialNativeName": "Republic of India"
+  },
+  {
+    "CountryId": 102,
+    "TwoCharacterCode": "IO",
+    "ThreeCharacterCode": "IOT",
+    "CallingCode": "+246",
+    "CommonName": "British Indian Ocean Territory",
+    "OfficialName": "British Indian Ocean Territory",
+    "CommonNativeName": "British Indian Ocean Territory",
+    "OfficialNativeName": "British Indian Ocean Territory"
+  },
+  {
+    "CountryId": 103,
+    "TwoCharacterCode": "IE",
+    "ThreeCharacterCode": "IRL",
+    "CallingCode": "+353",
+    "CommonName": "Ireland",
+    "OfficialName": "Republic of Ireland",
+    "CommonNativeName": "Ireland",
+    "OfficialNativeName": "Republic of Ireland"
+  },
+  {
+    "CountryId": 104,
+    "TwoCharacterCode": "IR",
+    "ThreeCharacterCode": "IRN",
+    "CallingCode": "+98",
+    "CommonName": "Iran",
+    "OfficialName": "Islamic Republic of Iran",
+    "CommonNativeName": "ایران",
+    "OfficialNativeName": "جمهوری اسلامی ایران"
+  },
+  {
+    "CountryId": 105,
+    "TwoCharacterCode": "IQ",
+    "ThreeCharacterCode": "IRQ",
+    "CallingCode": "+964",
+    "CommonName": "Iraq",
+    "OfficialName": "Republic of Iraq",
+    "CommonNativeName": "العراق",
+    "OfficialNativeName": "جمهورية العراق"
+  },
+  {
+    "CountryId": 106,
+    "TwoCharacterCode": "IS",
+    "ThreeCharacterCode": "ISL",
+    "CallingCode": "+354",
+    "CommonName": "Iceland",
+    "OfficialName": "Iceland",
+    "CommonNativeName": "Ísland",
+    "OfficialNativeName": "Ísland"
+  },
+  {
+    "CountryId": 107,
+    "TwoCharacterCode": "IL",
+    "ThreeCharacterCode": "ISR",
+    "CallingCode": "+972",
+    "CommonName": "Israel",
+    "OfficialName": "State of Israel",
+    "CommonNativeName": "إسرائيل",
+    "OfficialNativeName": "دولة إسرائيل"
+  },
+  {
+    "CountryId": 108,
+    "TwoCharacterCode": "IT",
+    "ThreeCharacterCode": "ITA",
+    "CallingCode": "+39",
+    "CommonName": "Italy",
+    "OfficialName": "Italian Republic",
+    "CommonNativeName": "Italien",
+    "OfficialNativeName": "Italienische Republik"
+  },
+  {
+    "CountryId": 109,
+    "TwoCharacterCode": "JM",
+    "ThreeCharacterCode": "JAM",
+    "CallingCode": "+1876",
+    "CommonName": "Jamaica",
+    "OfficialName": "Jamaica",
+    "CommonNativeName": "Jamaica",
+    "OfficialNativeName": "Jamaica"
+  },
+  {
+    "CountryId": 110,
+    "TwoCharacterCode": "JE",
+    "ThreeCharacterCode": "JEY",
+    "CallingCode": "+44",
+    "CommonName": "Jersey",
+    "OfficialName": "Bailiwick of Jersey",
+    "CommonNativeName": "Jersey",
+    "OfficialNativeName": "Bailiwick of Jersey"
+  },
+  {
+    "CountryId": 111,
+    "TwoCharacterCode": "JO",
+    "ThreeCharacterCode": "JOR",
+    "CallingCode": "+962",
+    "CommonName": "Jordan",
+    "OfficialName": "Hashemite Kingdom of Jordan",
+    "CommonNativeName": "الأردن",
+    "OfficialNativeName": "المملكة الأردنية الهاشمية"
+  },
+  {
+    "CountryId": 112,
+    "TwoCharacterCode": "JP",
+    "ThreeCharacterCode": "JPN",
+    "CallingCode": "+81",
+    "CommonName": "Japan",
+    "OfficialName": "Japan",
+    "CommonNativeName": "日本",
+    "OfficialNativeName": "日本"
+  },
+  {
+    "CountryId": 113,
+    "TwoCharacterCode": "KZ",
+    "ThreeCharacterCode": "KAZ",
+    "CallingCode": "+76",
+    "CommonName": "Kazakhstan",
+    "OfficialName": "Republic of Kazakhstan",
+    "CommonNativeName": "Қазақстан",
+    "OfficialNativeName": "Қазақстан Республикасы"
+  },
+  {
+    "CountryId": 114,
+    "TwoCharacterCode": "KE",
+    "ThreeCharacterCode": "KEN",
+    "CallingCode": "+254",
+    "CommonName": "Kenya",
+    "OfficialName": "Republic of Kenya",
+    "CommonNativeName": "Kenya",
+    "OfficialNativeName": "Republic of Kenya"
+  },
+  {
+    "CountryId": 115,
+    "TwoCharacterCode": "KG",
+    "ThreeCharacterCode": "KGZ",
+    "CallingCode": "+996",
+    "CommonName": "Kyrgyzstan",
+    "OfficialName": "Kyrgyz Republic",
+    "CommonNativeName": "Кыргызстан",
+    "OfficialNativeName": "Кыргыз Республикасы"
+  },
+  {
+    "CountryId": 116,
+    "TwoCharacterCode": "KH",
+    "ThreeCharacterCode": "KHM",
+    "CallingCode": "+855",
+    "CommonName": "Cambodia",
+    "OfficialName": "Kingdom of Cambodia",
+    "CommonNativeName": "Kâmpŭchéa",
+    "OfficialNativeName": "ព្រះរាជាណាចក្រកម្ពុជា"
+  },
+  {
+    "CountryId": 117,
+    "TwoCharacterCode": "KI",
+    "ThreeCharacterCode": "KIR",
+    "CallingCode": "+686",
+    "CommonName": "Kiribati",
+    "OfficialName": "Independent and Sovereign Republic of Kiribati",
+    "CommonNativeName": "Kiribati",
+    "OfficialNativeName": "Independent and Sovereign Republic of Kiribati"
+  },
+  {
+    "CountryId": 118,
+    "TwoCharacterCode": "KN",
+    "ThreeCharacterCode": "KNA",
+    "CallingCode": "+1869",
+    "CommonName": "Saint Kitts and Nevis",
+    "OfficialName": "Federation of Saint Christopher and Nevisa",
+    "CommonNativeName": "Saint Kitts and Nevis",
+    "OfficialNativeName": "Federation of Saint Christopher and Nevisa"
+  },
+  {
+    "CountryId": 119,
+    "TwoCharacterCode": "KR",
+    "ThreeCharacterCode": "KOR",
+    "CallingCode": "+82",
+    "CommonName": "South Korea",
+    "OfficialName": "Republic of Korea",
+    "CommonNativeName": "대한민국",
+    "OfficialNativeName": "한국"
+  },
+  {
+    "CountryId": 120,
+    "TwoCharacterCode": "XK",
+    "ThreeCharacterCode": "UNK",
+    "CallingCode": "+383",
+    "CommonName": "Kosovo",
+    "OfficialName": "Republic of Kosovo",
+    "CommonNativeName": "Kosova",
+    "OfficialNativeName": "Republika e Kosovës"
+  },
+  {
+    "CountryId": 121,
+    "TwoCharacterCode": "KW",
+    "ThreeCharacterCode": "KWT",
+    "CallingCode": "+965",
+    "CommonName": "Kuwait",
+    "OfficialName": "State of Kuwait",
+    "CommonNativeName": "الكويت",
+    "OfficialNativeName": "دولة الكويت"
+  },
+  {
+    "CountryId": 122,
+    "TwoCharacterCode": "LA",
+    "ThreeCharacterCode": "LAO",
+    "CallingCode": "+856",
+    "CommonName": "Laos",
+    "OfficialName": "Lao People's Democratic Republic",
+    "CommonNativeName": "ສປປລາວ",
+    "OfficialNativeName": "ສາທາລະນະ ຊາທິປະໄຕ ຄົນລາວ ຂອງ"
+  },
+  {
+    "CountryId": 123,
+    "TwoCharacterCode": "LB",
+    "ThreeCharacterCode": "LBN",
+    "CallingCode": "+961",
+    "CommonName": "Lebanon",
+    "OfficialName": "Lebanese Republic",
+    "CommonNativeName": "لبنان",
+    "OfficialNativeName": "الجمهورية اللبنانية"
+  },
+  {
+    "CountryId": 124,
+    "TwoCharacterCode": "LR",
+    "ThreeCharacterCode": "LBR",
+    "CallingCode": "+231",
+    "CommonName": "Liberia",
+    "OfficialName": "Republic of Liberia",
+    "CommonNativeName": "Liberia",
+    "OfficialNativeName": "Republic of Liberia"
+  },
+  {
+    "CountryId": 125,
+    "TwoCharacterCode": "LY",
+    "ThreeCharacterCode": "LBY",
+    "CallingCode": "+218",
+    "CommonName": "Libya",
+    "OfficialName": "State of Libya",
+    "CommonNativeName": "‏ليبيا",
+    "OfficialNativeName": "الدولة ليبيا"
+  },
+  {
+    "CountryId": 126,
+    "TwoCharacterCode": "LC",
+    "ThreeCharacterCode": "LCA",
+    "CallingCode": "+1758",
+    "CommonName": "Saint Lucia",
+    "OfficialName": "Saint Lucia",
+    "CommonNativeName": "Saint Lucia",
+    "OfficialNativeName": "Saint Lucia"
+  },
+  {
+    "CountryId": 127,
+    "TwoCharacterCode": "LI",
+    "ThreeCharacterCode": "LIE",
+    "CallingCode": "+423",
+    "CommonName": "Liechtenstein",
+    "OfficialName": "Principality of Liechtenstein",
+    "CommonNativeName": "Liechtenstein",
+    "OfficialNativeName": "Fürstentum Liechtenstein"
+  },
+  {
+    "CountryId": 128,
+    "TwoCharacterCode": "LK",
+    "ThreeCharacterCode": "LKA",
+    "CallingCode": "+94",
+    "CommonName": "Sri Lanka",
+    "OfficialName": "Democratic Socialist Republic of Sri Lanka",
+    "CommonNativeName": "ශ්‍රී ලංකාව",
+    "OfficialNativeName": "ශ්‍රී ලංකා ප්‍රජාතාන්ත්‍රික සමාජවාදී ජනරජය"
+  },
+  {
+    "CountryId": 129,
+    "TwoCharacterCode": "LS",
+    "ThreeCharacterCode": "LSO",
+    "CallingCode": "+266",
+    "CommonName": "Lesotho",
+    "OfficialName": "Kingdom of Lesotho",
+    "CommonNativeName": "Lesotho",
+    "OfficialNativeName": "Kingdom of Lesotho"
+  },
+  {
+    "CountryId": 130,
+    "TwoCharacterCode": "LT",
+    "ThreeCharacterCode": "LTU",
+    "CallingCode": "+370",
+    "CommonName": "Lithuania",
+    "OfficialName": "Republic of Lithuania",
+    "CommonNativeName": "Lietuva",
+    "OfficialNativeName": "Lietuvos Respublikos"
+  },
+  {
+    "CountryId": 131,
+    "TwoCharacterCode": "LU",
+    "ThreeCharacterCode": "LUX",
+    "CallingCode": "+352",
+    "CommonName": "Luxembourg",
+    "OfficialName": "Grand Duchy of Luxembourg",
+    "CommonNativeName": "Luxemburg",
+    "OfficialNativeName": "Großherzogtum Luxemburg"
+  },
+  {
+    "CountryId": 132,
+    "TwoCharacterCode": "LV",
+    "ThreeCharacterCode": "LVA",
+    "CallingCode": "+371",
+    "CommonName": "Latvia",
+    "OfficialName": "Republic of Latvia",
+    "CommonNativeName": "Latvija",
+    "OfficialNativeName": "Latvijas Republikas"
+  },
+  {
+    "CountryId": 133,
+    "TwoCharacterCode": "MO",
+    "ThreeCharacterCode": "MAC",
+    "CallingCode": "+853",
+    "CommonName": "Macau",
+    "OfficialName": "Macao Special Administrative Region of the People's Republic of China",
+    "CommonNativeName": "Macau",
+    "OfficialNativeName": "Região Administrativa Especial de Macau da República Popular da China"
+  },
+  {
+    "CountryId": 134,
+    "TwoCharacterCode": "MF",
+    "ThreeCharacterCode": "MAF",
+    "CallingCode": "+590",
+    "CommonName": "Saint Martin",
+    "OfficialName": "Saint Martin",
+    "CommonNativeName": "Saint-Martin",
+    "OfficialNativeName": "Saint-Martin"
+  },
+  {
+    "CountryId": 135,
+    "TwoCharacterCode": "MA",
+    "ThreeCharacterCode": "MAR",
+    "CallingCode": "+212",
+    "CommonName": "Morocco",
+    "OfficialName": "Kingdom of Morocco",
+    "CommonNativeName": "المغرب",
+    "OfficialNativeName": "المملكة المغربية"
+  },
+  {
+    "CountryId": 136,
+    "TwoCharacterCode": "MC",
+    "ThreeCharacterCode": "MCO",
+    "CallingCode": "+377",
+    "CommonName": "Monaco",
+    "OfficialName": "Principality of Monaco",
+    "CommonNativeName": "Monaco",
+    "OfficialNativeName": "Principauté de Monaco"
+  },
+  {
+    "CountryId": 137,
+    "TwoCharacterCode": "MD",
+    "ThreeCharacterCode": "MDA",
+    "CallingCode": "+373",
+    "CommonName": "Moldova",
+    "OfficialName": "Republic of Moldova",
+    "CommonNativeName": "Moldova",
+    "OfficialNativeName": "Republica Moldova"
+  },
+  {
+    "CountryId": 138,
+    "TwoCharacterCode": "MG",
+    "ThreeCharacterCode": "MDG",
+    "CallingCode": "+261",
+    "CommonName": "Madagascar",
+    "OfficialName": "Republic of Madagascar",
+    "CommonNativeName": "Madagascar",
+    "OfficialNativeName": "République de Madagascar"
+  },
+  {
+    "CountryId": 139,
+    "TwoCharacterCode": "MV",
+    "ThreeCharacterCode": "MDV",
+    "CallingCode": "+960",
+    "CommonName": "Maldives",
+    "OfficialName": "Republic of the Maldives",
+    "CommonNativeName": "ދިވެހިރާއްޖޭގެ",
+    "OfficialNativeName": "ދިވެހިރާއްޖޭގެ ޖުމްހޫރިއްޔާ"
+  },
+  {
+    "CountryId": 140,
+    "TwoCharacterCode": "MX",
+    "ThreeCharacterCode": "MEX",
+    "CallingCode": "+52",
+    "CommonName": "Mexico",
+    "OfficialName": "United Mexican States",
+    "CommonNativeName": "México",
+    "OfficialNativeName": "Estados Unidos Mexicanos"
+  },
+  {
+    "CountryId": 141,
+    "TwoCharacterCode": "MH",
+    "ThreeCharacterCode": "MHL",
+    "CallingCode": "+692",
+    "CommonName": "Marshall Islands",
+    "OfficialName": "Republic of the Marshall Islands",
+    "CommonNativeName": "Marshall Islands",
+    "OfficialNativeName": "Republic of the Marshall Islands"
+  },
+  {
+    "CountryId": 142,
+    "TwoCharacterCode": "MK",
+    "ThreeCharacterCode": "MKD",
+    "CallingCode": "+389",
+    "CommonName": "Macedonia",
+    "OfficialName": "Republic of Macedonia",
+    "CommonNativeName": "Македонија",
+    "OfficialNativeName": "Република Македонија"
+  },
+  {
+    "CountryId": 143,
+    "TwoCharacterCode": "ML",
+    "ThreeCharacterCode": "MLI",
+    "CallingCode": "+223",
+    "CommonName": "Mali",
+    "OfficialName": "Republic of Mali",
+    "CommonNativeName": "Mali",
+    "OfficialNativeName": "République du Mali"
+  },
+  {
+    "CountryId": 144,
+    "TwoCharacterCode": "MT",
+    "ThreeCharacterCode": "MLT",
+    "CallingCode": "+356",
+    "CommonName": "Malta",
+    "OfficialName": "Republic of Malta",
+    "CommonNativeName": "Malta",
+    "OfficialNativeName": "Republic of Malta"
+  },
+  {
+    "CountryId": 145,
+    "TwoCharacterCode": "MM",
+    "ThreeCharacterCode": "MMR",
+    "CallingCode": "+95",
+    "CommonName": "Myanmar",
+    "OfficialName": "Republic of the Union of Myanmar",
+    "CommonNativeName": "မြန်မာ",
+    "OfficialNativeName": "ပြည်ထောင်စု သမ္မတ မြန်မာနိုင်ငံတော်"
+  },
+  {
+    "CountryId": 146,
+    "TwoCharacterCode": "ME",
+    "ThreeCharacterCode": "MNE",
+    "CallingCode": "+382",
+    "CommonName": "Montenegro",
+    "OfficialName": "Montenegro",
+    "CommonNativeName": "Црна Гора",
+    "OfficialNativeName": "Црна Гора"
+  },
+  {
+    "CountryId": 147,
+    "TwoCharacterCode": "MN",
+    "ThreeCharacterCode": "MNG",
+    "CallingCode": "+976",
+    "CommonName": "Mongolia",
+    "OfficialName": "Mongolia",
+    "CommonNativeName": "Монгол улс",
+    "OfficialNativeName": "Монгол улс"
+  },
+  {
+    "CountryId": 148,
+    "TwoCharacterCode": "MP",
+    "ThreeCharacterCode": "MNP",
+    "CallingCode": "+1670",
+    "CommonName": "Northern Mariana Islands",
+    "OfficialName": "Commonwealth of the Northern Mariana Islands",
+    "CommonNativeName": "Northern Mariana Islands",
+    "OfficialNativeName": "Commonwealth of the Northern Mariana Islands"
+  },
+  {
+    "CountryId": 149,
+    "TwoCharacterCode": "MZ",
+    "ThreeCharacterCode": "MOZ",
+    "CallingCode": "+258",
+    "CommonName": "Mozambique",
+    "OfficialName": "Republic of Mozambique",
+    "CommonNativeName": "Moçambique",
+    "OfficialNativeName": "República de Moçambique"
+  },
+  {
+    "CountryId": 150,
+    "TwoCharacterCode": "MR",
+    "ThreeCharacterCode": "MRT",
+    "CallingCode": "+222",
+    "CommonName": "Mauritania",
+    "OfficialName": "Islamic Republic of Mauritania",
+    "CommonNativeName": "موريتانيا",
+    "OfficialNativeName": "الجمهورية الإسلامية الموريتانية"
+  },
+  {
+    "CountryId": 151,
+    "TwoCharacterCode": "MS",
+    "ThreeCharacterCode": "MSR",
+    "CallingCode": "+1664",
+    "CommonName": "Montserrat",
+    "OfficialName": "Montserrat",
+    "CommonNativeName": "Montserrat",
+    "OfficialNativeName": "Montserrat"
+  },
+  {
+    "CountryId": 152,
+    "TwoCharacterCode": "MQ",
+    "ThreeCharacterCode": "MTQ",
+    "CallingCode": "+596",
+    "CommonName": "Martinique",
+    "OfficialName": "Martinique",
+    "CommonNativeName": "Martinique",
+    "OfficialNativeName": "Martinique"
+  },
+  {
+    "CountryId": 153,
+    "TwoCharacterCode": "MU",
+    "ThreeCharacterCode": "MUS",
+    "CallingCode": "+230",
+    "CommonName": "Mauritius",
+    "OfficialName": "Republic of Mauritius",
+    "CommonNativeName": "Mauritius",
+    "OfficialNativeName": "Republic of Mauritius"
+  },
+  {
+    "CountryId": 154,
+    "TwoCharacterCode": "MW",
+    "ThreeCharacterCode": "MWI",
+    "CallingCode": "+265",
+    "CommonName": "Malawi",
+    "OfficialName": "Republic of Malawi",
+    "CommonNativeName": "Malawi",
+    "OfficialNativeName": "Republic of Malawi"
+  },
+  {
+    "CountryId": 155,
+    "TwoCharacterCode": "MY",
+    "ThreeCharacterCode": "MYS",
+    "CallingCode": "+60",
+    "CommonName": "Malaysia",
+    "OfficialName": "Malaysia",
+    "CommonNativeName": "Malaysia",
+    "OfficialNativeName": "Malaysia"
+  },
+  {
+    "CountryId": 156,
+    "TwoCharacterCode": "YT",
+    "ThreeCharacterCode": "MYT",
+    "CallingCode": "+262",
+    "CommonName": "Mayotte",
+    "OfficialName": "Department of Mayotte",
+    "CommonNativeName": "Mayotte",
+    "OfficialNativeName": "Département de Mayotte"
+  },
+  {
+    "CountryId": 157,
+    "TwoCharacterCode": "NA",
+    "ThreeCharacterCode": "NAM",
+    "CallingCode": "+264",
+    "CommonName": "Namibia",
+    "OfficialName": "Republic of Namibia",
+    "CommonNativeName": "Namibië",
+    "OfficialNativeName": "Republiek van Namibië"
+  },
+  {
+    "CountryId": 158,
+    "TwoCharacterCode": "NC",
+    "ThreeCharacterCode": "NCL",
+    "CallingCode": "+687",
+    "CommonName": "new Caledonia",
+    "OfficialName": "new Caledonia",
+    "CommonNativeName": "Nouvelle-Calédonie",
+    "OfficialNativeName": "Nouvelle-Calédonie"
+  },
+  {
+    "CountryId": 159,
+    "TwoCharacterCode": "NE",
+    "ThreeCharacterCode": "NER",
+    "CallingCode": "+227",
+    "CommonName": "Niger",
+    "OfficialName": "Republic of Niger",
+    "CommonNativeName": "Niger",
+    "OfficialNativeName": "République du Niger"
+  },
+  {
+    "CountryId": 160,
+    "TwoCharacterCode": "NF",
+    "ThreeCharacterCode": "NFK",
+    "CallingCode": "+672",
+    "CommonName": "Norfolk Island",
+    "OfficialName": "Territory of Norfolk Island",
+    "CommonNativeName": "Norfolk Island",
+    "OfficialNativeName": "Territory of Norfolk Island"
+  },
+  {
+    "CountryId": 161,
+    "TwoCharacterCode": "NG",
+    "ThreeCharacterCode": "NGA",
+    "CallingCode": "+234",
+    "CommonName": "Nigeria",
+    "OfficialName": "Federal Republic of Nigeria",
+    "CommonNativeName": "Nigeria",
+    "OfficialNativeName": "Federal Republic of Nigeria"
+  },
+  {
+    "CountryId": 162,
+    "TwoCharacterCode": "NI",
+    "ThreeCharacterCode": "NIC",
+    "CallingCode": "+505",
+    "CommonName": "Nicaragua",
+    "OfficialName": "Republic of Nicaragua",
+    "CommonNativeName": "Nicaragua",
+    "OfficialNativeName": "República de Nicaragua"
+  },
+  {
+    "CountryId": 163,
+    "TwoCharacterCode": "NU",
+    "ThreeCharacterCode": "NIU",
+    "CallingCode": "+683",
+    "CommonName": "Niue",
+    "OfficialName": "Niue",
+    "CommonNativeName": "Niue",
+    "OfficialNativeName": "Niue"
+  },
+  {
+    "CountryId": 164,
+    "TwoCharacterCode": "NL",
+    "ThreeCharacterCode": "NLD",
+    "CallingCode": "+31",
+    "CommonName": "Netherlands",
+    "OfficialName": "Netherlands",
+    "CommonNativeName": "Nederland",
+    "OfficialNativeName": "Nederland"
+  },
+  {
+    "CountryId": 165,
+    "TwoCharacterCode": "NO",
+    "ThreeCharacterCode": "NOR",
+    "CallingCode": "+47",
+    "CommonName": "Norway",
+    "OfficialName": "Kingdom of Norway",
+    "CommonNativeName": "Noreg",
+    "OfficialNativeName": "Kongeriket Noreg"
+  },
+  {
+    "CountryId": 166,
+    "TwoCharacterCode": "NP",
+    "ThreeCharacterCode": "NPL",
+    "CallingCode": "+977",
+    "CommonName": "Nepal",
+    "OfficialName": "Federal Democratic Republic of Nepal",
+    "CommonNativeName": "नेपाल",
+    "OfficialNativeName": "नेपाल संघीय लोकतान्त्रिक गणतन्त्र"
+  },
+  {
+    "CountryId": 167,
+    "TwoCharacterCode": "NR",
+    "ThreeCharacterCode": "NRU",
+    "CallingCode": "+674",
+    "CommonName": "Nauru",
+    "OfficialName": "Republic of Nauru",
+    "CommonNativeName": "Nauru",
+    "OfficialNativeName": "Republic of Nauru"
+  },
+  {
+    "CountryId": 168,
+    "TwoCharacterCode": "NZ",
+    "ThreeCharacterCode": "NZL",
+    "CallingCode": "+64",
+    "CommonName": "new Zealand",
+    "OfficialName": "new Zealand",
+    "CommonNativeName": "new Zealand",
+    "OfficialNativeName": "new Zealand"
+  },
+  {
+    "CountryId": 169,
+    "TwoCharacterCode": "OM",
+    "ThreeCharacterCode": "OMN",
+    "CallingCode": "+968",
+    "CommonName": "Oman",
+    "OfficialName": "Sultanate of Oman",
+    "CommonNativeName": "عمان",
+    "OfficialNativeName": "سلطنة عمان"
+  },
+  {
+    "CountryId": 170,
+    "TwoCharacterCode": "PK",
+    "ThreeCharacterCode": "PAK",
+    "CallingCode": "+92",
+    "CommonName": "Pakistan",
+    "OfficialName": "Islamic Republic of Pakistan",
+    "CommonNativeName": "Pakistan",
+    "OfficialNativeName": "Islamic Republic of Pakistan"
+  },
+  {
+    "CountryId": 171,
+    "TwoCharacterCode": "PA",
+    "ThreeCharacterCode": "PAN",
+    "CallingCode": "+507",
+    "CommonName": "Panama",
+    "OfficialName": "Republic of Panama",
+    "CommonNativeName": "Panamá",
+    "OfficialNativeName": "República de Panamá"
+  },
+  {
+    "CountryId": 172,
+    "TwoCharacterCode": "PN",
+    "ThreeCharacterCode": "PCN",
+    "CallingCode": "+64",
+    "CommonName": "Pitcairn Islands",
+    "OfficialName": "Pitcairn Group of Islands",
+    "CommonNativeName": "Pitcairn Islands",
+    "OfficialNativeName": "Pitcairn Group of Islands"
+  },
+  {
+    "CountryId": 173,
+    "TwoCharacterCode": "PE",
+    "ThreeCharacterCode": "PER",
+    "CallingCode": "+51",
+    "CommonName": "Peru",
+    "OfficialName": "Republic of Peru",
+    "CommonNativeName": "Piruw",
+    "OfficialNativeName": "Piruw Suyu"
+  },
+  {
+    "CountryId": 174,
+    "TwoCharacterCode": "PH",
+    "ThreeCharacterCode": "PHL",
+    "CallingCode": "+63",
+    "CommonName": "Philippines",
+    "OfficialName": "Republic of the Philippines",
+    "CommonNativeName": "Philippines",
+    "OfficialNativeName": "Republic of the Philippines"
+  },
+  {
+    "CountryId": 175,
+    "TwoCharacterCode": "PW",
+    "ThreeCharacterCode": "PLW",
+    "CallingCode": "+680",
+    "CommonName": "Palau",
+    "OfficialName": "Republic of Palau",
+    "CommonNativeName": "Palau",
+    "OfficialNativeName": "Republic of Palau"
+  },
+  {
+    "CountryId": 176,
+    "TwoCharacterCode": "PG",
+    "ThreeCharacterCode": "PNG",
+    "CallingCode": "+675",
+    "CommonName": "Papua new Guinea",
+    "OfficialName": "Independent State of Papua new Guinea",
+    "CommonNativeName": "Papua new Guinea",
+    "OfficialNativeName": "Independent State of Papua new Guinea"
+  },
+  {
+    "CountryId": 177,
+    "TwoCharacterCode": "PL",
+    "ThreeCharacterCode": "POL",
+    "CallingCode": "+48",
+    "CommonName": "Poland",
+    "OfficialName": "Republic of Poland",
+    "CommonNativeName": "Polska",
+    "OfficialNativeName": "Rzeczpospolita Polska"
+  },
+  {
+    "CountryId": 178,
+    "TwoCharacterCode": "PR",
+    "ThreeCharacterCode": "PRI",
+    "CallingCode": "+1787",
+    "CommonName": "Puerto Rico",
+    "OfficialName": "Commonwealth of Puerto Rico",
+    "CommonNativeName": "Puerto Rico",
+    "OfficialNativeName": "Commonwealth of Puerto Rico"
+  },
+  {
+    "CountryId": 179,
+    "TwoCharacterCode": "KP",
+    "ThreeCharacterCode": "PRK",
+    "CallingCode": "+850",
+    "CommonName": "North Korea",
+    "OfficialName": "Democratic People's Republic of Korea",
+    "CommonNativeName": "북한",
+    "OfficialNativeName": "조선 민주주의 인민 공화국"
+  },
+  {
+    "CountryId": 180,
+    "TwoCharacterCode": "PT",
+    "ThreeCharacterCode": "PRT",
+    "CallingCode": "+351",
+    "CommonName": "Portugal",
+    "OfficialName": "Portuguese Republic",
+    "CommonNativeName": "Portugal",
+    "OfficialNativeName": "República português"
+  },
+  {
+    "CountryId": 181,
+    "TwoCharacterCode": "PY",
+    "ThreeCharacterCode": "PRY",
+    "CallingCode": "+595",
+    "CommonName": "Paraguay",
+    "OfficialName": "Republic of Paraguay",
+    "CommonNativeName": "Paraguái",
+    "OfficialNativeName": "Tetã Paraguái"
+  },
+  {
+    "CountryId": 182,
+    "TwoCharacterCode": "PS",
+    "ThreeCharacterCode": "PSE",
+    "CallingCode": "+970",
+    "CommonName": "Palestine",
+    "OfficialName": "State of Palestine",
+    "CommonNativeName": "فلسطين",
+    "OfficialNativeName": "دولة فلسطين"
+  },
+  {
+    "CountryId": 183,
+    "TwoCharacterCode": "PF",
+    "ThreeCharacterCode": "PYF",
+    "CallingCode": "+689",
+    "CommonName": "French Polynesia",
+    "OfficialName": "French Polynesia",
+    "CommonNativeName": "Polynésie française",
+    "OfficialNativeName": "Polynésie française"
+  },
+  {
+    "CountryId": 184,
+    "TwoCharacterCode": "QA",
+    "ThreeCharacterCode": "QAT",
+    "CallingCode": "+974",
+    "CommonName": "Qatar",
+    "OfficialName": "State of Qatar",
+    "CommonNativeName": "قطر",
+    "OfficialNativeName": "دولة قطر"
+  },
+  {
+    "CountryId": 185,
+    "TwoCharacterCode": "RE",
+    "ThreeCharacterCode": "REU",
+    "CallingCode": "+262",
+    "CommonName": "Réunion",
+    "OfficialName": "Réunion Island",
+    "CommonNativeName": "La Réunion",
+    "OfficialNativeName": "Ile de la Réunion"
+  },
+  {
+    "CountryId": 186,
+    "TwoCharacterCode": "RO",
+    "ThreeCharacterCode": "ROU",
+    "CallingCode": "+40",
+    "CommonName": "Romania",
+    "OfficialName": "Romania",
+    "CommonNativeName": "România",
+    "OfficialNativeName": "România"
+  },
+  {
+    "CountryId": 187,
+    "TwoCharacterCode": "RU",
+    "ThreeCharacterCode": "RUS",
+    "CallingCode": "+7",
+    "CommonName": "Russia",
+    "OfficialName": "Russian Federation",
+    "CommonNativeName": "Россия",
+    "OfficialNativeName": "Российская Федерация"
+  },
+  {
+    "CountryId": 188,
+    "TwoCharacterCode": "RW",
+    "ThreeCharacterCode": "RWA",
+    "CallingCode": "+250",
+    "CommonName": "Rwanda",
+    "OfficialName": "Republic of Rwanda",
+    "CommonNativeName": "Rwanda",
+    "OfficialNativeName": "Republic of Rwanda"
+  },
+  {
+    "CountryId": 189,
+    "TwoCharacterCode": "SA",
+    "ThreeCharacterCode": "SAU",
+    "CallingCode": "+966",
+    "CommonName": "Saudi Arabia",
+    "OfficialName": "Kingdom of Saudi Arabia",
+    "CommonNativeName": "العربية السعودية",
+    "OfficialNativeName": "المملكة العربية السعودية"
+  },
+  {
+    "CountryId": 190,
+    "TwoCharacterCode": "SD",
+    "ThreeCharacterCode": "SDN",
+    "CallingCode": "+249",
+    "CommonName": "Sudan",
+    "OfficialName": "Republic of the Sudan",
+    "CommonNativeName": "السودان",
+    "OfficialNativeName": "جمهورية السودان"
+  },
+  {
+    "CountryId": 191,
+    "TwoCharacterCode": "SN",
+    "ThreeCharacterCode": "SEN",
+    "CallingCode": "+221",
+    "CommonName": "Senegal",
+    "OfficialName": "Republic of Senegal",
+    "CommonNativeName": "Sénégal",
+    "OfficialNativeName": "République du Sénégal"
+  },
+  {
+    "CountryId": 192,
+    "TwoCharacterCode": "SG",
+    "ThreeCharacterCode": "SGP",
+    "CallingCode": "+65",
+    "CommonName": "Singapore",
+    "OfficialName": "Republic of Singapore",
+    "CommonNativeName": "新加坡",
+    "OfficialNativeName": "新加坡共和国"
+  },
+  {
+    "CountryId": 193,
+    "TwoCharacterCode": "GS",
+    "ThreeCharacterCode": "SGS",
+    "CallingCode": "+500",
+    "CommonName": "South Georgia",
+    "OfficialName": "South Georgia and the South Sandwich Islands",
+    "CommonNativeName": "South Georgia",
+    "OfficialNativeName": "South Georgia and the South Sandwich Islands"
+  },
+  {
+    "CountryId": 194,
+    "TwoCharacterCode": "SJ",
+    "ThreeCharacterCode": "SJM",
+    "CallingCode": "+4779",
+    "CommonName": "Svalbard and Jan Mayen",
+    "OfficialName": "Svalbard og Jan Mayen",
+    "CommonNativeName": "Svalbard og Jan Mayen",
+    "OfficialNativeName": "Svalbard og Jan Mayen"
+  },
+  {
+    "CountryId": 195,
+    "TwoCharacterCode": "SB",
+    "ThreeCharacterCode": "SLB",
+    "CallingCode": "+677",
+    "CommonName": "Solomon Islands",
+    "OfficialName": "Solomon Islands",
+    "CommonNativeName": "Solomon Islands",
+    "OfficialNativeName": "Solomon Islands"
+  },
+  {
+    "CountryId": 196,
+    "TwoCharacterCode": "SL",
+    "ThreeCharacterCode": "SLE",
+    "CallingCode": "+232",
+    "CommonName": "Sierra Leone",
+    "OfficialName": "Republic of Sierra Leone",
+    "CommonNativeName": "Sierra Leone",
+    "OfficialNativeName": "Republic of Sierra Leone"
+  },
+  {
+    "CountryId": 197,
+    "TwoCharacterCode": "SV",
+    "ThreeCharacterCode": "SLV",
+    "CallingCode": "+503",
+    "CommonName": "El Salvador",
+    "OfficialName": "Republic of El Salvador",
+    "CommonNativeName": "El Salvador",
+    "OfficialNativeName": "República de El Salvador"
+  },
+  {
+    "CountryId": 198,
+    "TwoCharacterCode": "SM",
+    "ThreeCharacterCode": "SMR",
+    "CallingCode": "+378",
+    "CommonName": "San Marino",
+    "OfficialName": "Most Serene Republic of San Marino",
+    "CommonNativeName": "San Marino",
+    "OfficialNativeName": "Serenissima Repubblica di San Marino"
+  },
+  {
+    "CountryId": 199,
+    "TwoCharacterCode": "SO",
+    "ThreeCharacterCode": "SOM",
+    "CallingCode": "+252",
+    "CommonName": "Somalia",
+    "OfficialName": "Federal Republic of Somalia",
+    "CommonNativeName": "الصومال‎‎",
+    "OfficialNativeName": "جمهورية الصومال‎‎"
+  },
+  {
+    "CountryId": 200,
+    "TwoCharacterCode": "PM",
+    "ThreeCharacterCode": "SPM",
+    "CallingCode": "+508",
+    "CommonName": "Saint Pierre and Miquelon",
+    "OfficialName": "Saint Pierre and Miquelon",
+    "CommonNativeName": "Saint-Pierre-et-Miquelon",
+    "OfficialNativeName": "Collectivité territoriale de Saint-Pierre-et-Miquelon"
+  },
+  {
+    "CountryId": 201,
+    "TwoCharacterCode": "RS",
+    "ThreeCharacterCode": "SRB",
+    "CallingCode": "+381",
+    "CommonName": "Serbia",
+    "OfficialName": "Republic of Serbia",
+    "CommonNativeName": "Србија",
+    "OfficialNativeName": "Република Србија"
+  },
+  {
+    "CountryId": 202,
+    "TwoCharacterCode": "SS",
+    "ThreeCharacterCode": "SSD",
+    "CallingCode": "+211",
+    "CommonName": "South Sudan",
+    "OfficialName": "Republic of South Sudan",
+    "CommonNativeName": "South Sudan",
+    "OfficialNativeName": "Republic of South Sudan"
+  },
+  {
+    "CountryId": 203,
+    "TwoCharacterCode": "ST",
+    "ThreeCharacterCode": "STP",
+    "CallingCode": "+239",
+    "CommonName": "São Tomé and Príncipe",
+    "OfficialName": "Democratic Republic of São Tomé and Príncipe",
+    "CommonNativeName": "São Tomé e Príncipe",
+    "OfficialNativeName": "República Democrática do São Tomé e Príncipe"
+  },
+  {
+    "CountryId": 204,
+    "TwoCharacterCode": "SR",
+    "ThreeCharacterCode": "SUR",
+    "CallingCode": "+597",
+    "CommonName": "Suriname",
+    "OfficialName": "Republic of Suriname",
+    "CommonNativeName": "Suriname",
+    "OfficialNativeName": "Republiek Suriname"
+  },
+  {
+    "CountryId": 205,
+    "TwoCharacterCode": "SK",
+    "ThreeCharacterCode": "SVK",
+    "CallingCode": "+421",
+    "CommonName": "Slovakia",
+    "OfficialName": "Slovak Republic",
+    "CommonNativeName": "Slovensko",
+    "OfficialNativeName": "Slovenská republika"
+  },
+  {
+    "CountryId": 206,
+    "TwoCharacterCode": "SI",
+    "ThreeCharacterCode": "SVN",
+    "CallingCode": "+386",
+    "CommonName": "Slovenia",
+    "OfficialName": "Republic of Slovenia",
+    "CommonNativeName": "Slovenija",
+    "OfficialNativeName": "Republika Slovenija"
+  },
+  {
+    "CountryId": 207,
+    "TwoCharacterCode": "SE",
+    "ThreeCharacterCode": "SWE",
+    "CallingCode": "+46",
+    "CommonName": "Sweden",
+    "OfficialName": "Kingdom of Sweden",
+    "CommonNativeName": "Sverige",
+    "OfficialNativeName": "Konungariket Sverige"
+  },
+  {
+    "CountryId": 208,
+    "TwoCharacterCode": "SZ",
+    "ThreeCharacterCode": "SWZ",
+    "CallingCode": "+268",
+    "CommonName": "Swaziland",
+    "OfficialName": "Kingdom of Swaziland",
+    "CommonNativeName": "Swaziland",
+    "OfficialNativeName": "Kingdom of Swaziland"
+  },
+  {
+    "CountryId": 209,
+    "TwoCharacterCode": "SX",
+    "ThreeCharacterCode": "SXM",
+    "CallingCode": "+1721",
+    "CommonName": "Sint Maarten",
+    "OfficialName": "Sint Maarten",
+    "CommonNativeName": "Sint Maarten",
+    "OfficialNativeName": "Sint Maarten"
+  },
+  {
+    "CountryId": 210,
+    "TwoCharacterCode": "SC",
+    "ThreeCharacterCode": "SYC",
+    "CallingCode": "+248",
+    "CommonName": "Seychelles",
+    "OfficialName": "Republic of Seychelles",
+    "CommonNativeName": "Sesel",
+    "OfficialNativeName": "Repiblik Sesel"
+  },
+  {
+    "CountryId": 211,
+    "TwoCharacterCode": "SY",
+    "ThreeCharacterCode": "SYR",
+    "CallingCode": "+963",
+    "CommonName": "Syria",
+    "OfficialName": "Syrian Arab Republic",
+    "CommonNativeName": "سوريا",
+    "OfficialNativeName": "الجمهورية العربية السورية"
+  },
+  {
+    "CountryId": 212,
+    "TwoCharacterCode": "TC",
+    "ThreeCharacterCode": "TCA",
+    "CallingCode": "+1649",
+    "CommonName": "Turks and Caicos Islands",
+    "OfficialName": "Turks and Caicos Islands",
+    "CommonNativeName": "Turks and Caicos Islands",
+    "OfficialNativeName": "Turks and Caicos Islands"
+  },
+  {
+    "CountryId": 213,
+    "TwoCharacterCode": "TD",
+    "ThreeCharacterCode": "TCD",
+    "CallingCode": "+235",
+    "CommonName": "Chad",
+    "OfficialName": "Republic of Chad",
+    "CommonNativeName": "تشاد‎",
+    "OfficialNativeName": "جمهورية تشاد"
+  },
+  {
+    "CountryId": 214,
+    "TwoCharacterCode": "TG",
+    "ThreeCharacterCode": "TGO",
+    "CallingCode": "+228",
+    "CommonName": "Togo",
+    "OfficialName": "Togolese Republic",
+    "CommonNativeName": "Togo",
+    "OfficialNativeName": "République togolaise"
+  },
+  {
+    "CountryId": 215,
+    "TwoCharacterCode": "TH",
+    "ThreeCharacterCode": "THA",
+    "CallingCode": "+66",
+    "CommonName": "Thailand",
+    "OfficialName": "Kingdom of Thailand",
+    "CommonNativeName": "ประเทศไทย",
+    "OfficialNativeName": "ราชอาณาจักรไทย"
+  },
+  {
+    "CountryId": 216,
+    "TwoCharacterCode": "TJ",
+    "ThreeCharacterCode": "TJK",
+    "CallingCode": "+992",
+    "CommonName": "Tajikistan",
+    "OfficialName": "Republic of Tajikistan",
+    "CommonNativeName": "Таджикистан",
+    "OfficialNativeName": "Республика Таджикистан"
+  },
+  {
+    "CountryId": 217,
+    "TwoCharacterCode": "TK",
+    "ThreeCharacterCode": "TKL",
+    "CallingCode": "+690",
+    "CommonName": "Tokelau",
+    "OfficialName": "Tokelau",
+    "CommonNativeName": "Tokelau",
+    "OfficialNativeName": "Tokelau"
+  },
+  {
+    "CountryId": 218,
+    "TwoCharacterCode": "TM",
+    "ThreeCharacterCode": "TKM",
+    "CallingCode": "+993",
+    "CommonName": "Turkmenistan",
+    "OfficialName": "Turkmenistan",
+    "CommonNativeName": "Туркмения",
+    "OfficialNativeName": "Туркменистан"
+  },
+  {
+    "CountryId": 219,
+    "TwoCharacterCode": "TL",
+    "ThreeCharacterCode": "TLS",
+    "CallingCode": "+670",
+    "CommonName": "Timor-Leste",
+    "OfficialName": "Democratic Republic of Timor-Leste",
+    "CommonNativeName": "Timor-Leste",
+    "OfficialNativeName": "República Democrática de Timor-Leste"
+  },
+  {
+    "CountryId": 220,
+    "TwoCharacterCode": "TO",
+    "ThreeCharacterCode": "TON",
+    "CallingCode": "+676",
+    "CommonName": "Tonga",
+    "OfficialName": "Kingdom of Tonga",
+    "CommonNativeName": "Tonga",
+    "OfficialNativeName": "Kingdom of Tonga"
+  },
+  {
+    "CountryId": 221,
+    "TwoCharacterCode": "TT",
+    "ThreeCharacterCode": "TTO",
+    "CallingCode": "+1868",
+    "CommonName": "Trinidad and Tobago",
+    "OfficialName": "Republic of Trinidad and Tobago",
+    "CommonNativeName": "Trinidad and Tobago",
+    "OfficialNativeName": "Republic of Trinidad and Tobago"
+  },
+  {
+    "CountryId": 222,
+    "TwoCharacterCode": "TN",
+    "ThreeCharacterCode": "TUN",
+    "CallingCode": "+216",
+    "CommonName": "Tunisia",
+    "OfficialName": "Tunisian Republic",
+    "CommonNativeName": "تونس",
+    "OfficialNativeName": "الجمهورية التونسية"
+  },
+  {
+    "CountryId": 223,
+    "TwoCharacterCode": "TR",
+    "ThreeCharacterCode": "TUR",
+    "CallingCode": "+90",
+    "CommonName": "Turkey",
+    "OfficialName": "Republic of Turkey",
+    "CommonNativeName": "Türkiye",
+    "OfficialNativeName": "Türkiye Cumhuriyeti"
+  },
+  {
+    "CountryId": 224,
+    "TwoCharacterCode": "TV",
+    "ThreeCharacterCode": "TUV",
+    "CallingCode": "+688",
+    "CommonName": "Tuvalu",
+    "OfficialName": "Tuvalu",
+    "CommonNativeName": "Tuvalu",
+    "OfficialNativeName": "Tuvalu"
+  },
+  {
+    "CountryId": 225,
+    "TwoCharacterCode": "TW",
+    "ThreeCharacterCode": "TWN",
+    "CallingCode": "+886",
+    "CommonName": "Taiwan",
+    "OfficialName": "Republic of China (Taiwan)",
+    "CommonNativeName": "臺灣",
+    "OfficialNativeName": "中华民国"
+  },
+  {
+    "CountryId": 226,
+    "TwoCharacterCode": "TZ",
+    "ThreeCharacterCode": "TZA",
+    "CallingCode": "+255",
+    "CommonName": "Tanzania",
+    "OfficialName": "United Republic of Tanzania",
+    "CommonNativeName": "Tanzania",
+    "OfficialNativeName": "United Republic of Tanzania"
+  },
+  {
+    "CountryId": 227,
+    "TwoCharacterCode": "UG",
+    "ThreeCharacterCode": "UGA",
+    "CallingCode": "+256",
+    "CommonName": "Uganda",
+    "OfficialName": "Republic of Uganda",
+    "CommonNativeName": "Uganda",
+    "OfficialNativeName": "Republic of Uganda"
+  },
+  {
+    "CountryId": 228,
+    "TwoCharacterCode": "UA",
+    "ThreeCharacterCode": "UKR",
+    "CallingCode": "+380",
+    "CommonName": "Ukraine",
+    "OfficialName": "Ukraine",
+    "CommonNativeName": "Украина",
+    "OfficialNativeName": "Украина"
+  },
+  {
+    "CountryId": 229,
+    "TwoCharacterCode": "UY",
+    "ThreeCharacterCode": "URY",
+    "CallingCode": "+598",
+    "CommonName": "Uruguay",
+    "OfficialName": "Oriental Republic of Uruguay",
+    "CommonNativeName": "Uruguay",
+    "OfficialNativeName": "República Oriental del Uruguay"
+  },
+  {
+    "CountryId": 230,
+    "TwoCharacterCode": "US",
+    "ThreeCharacterCode": "USA",
+    "CallingCode": "+1",
+    "CommonName": "United States",
+    "OfficialName": "United States of America",
+    "CommonNativeName": "United States",
+    "OfficialNativeName": "United States of America"
+  },
+  {
+    "CountryId": 231,
+    "TwoCharacterCode": "UZ",
+    "ThreeCharacterCode": "UZB",
+    "CallingCode": "+998",
+    "CommonName": "Uzbekistan",
+    "OfficialName": "Republic of Uzbekistan",
+    "CommonNativeName": "Узбекистан",
+    "OfficialNativeName": "Республика Узбекистан"
+  },
+  {
+    "CountryId": 232,
+    "TwoCharacterCode": "VA",
+    "ThreeCharacterCode": "VAT",
+    "CallingCode": "+3906698",
+    "CommonName": "Vatican City",
+    "OfficialName": "Vatican City State",
+    "CommonNativeName": "Vaticano",
+    "OfficialNativeName": "Stato della Città del Vaticano"
+  },
+  {
+    "CountryId": 233,
+    "TwoCharacterCode": "VC",
+    "ThreeCharacterCode": "VCT",
+    "CallingCode": "+1784",
+    "CommonName": "Saint Vincent and the Grenadines",
+    "OfficialName": "Saint Vincent and the Grenadines",
+    "CommonNativeName": "Saint Vincent and the Grenadines",
+    "OfficialNativeName": "Saint Vincent and the Grenadines"
+  },
+  {
+    "CountryId": 234,
+    "TwoCharacterCode": "VE",
+    "ThreeCharacterCode": "VEN",
+    "CallingCode": "+58",
+    "CommonName": "Venezuela",
+    "OfficialName": "Bolivarian Republic of Venezuela",
+    "CommonNativeName": "Venezuela",
+    "OfficialNativeName": "República Bolivariana de Venezuela"
+  },
+  {
+    "CountryId": 235,
+    "TwoCharacterCode": "VG",
+    "ThreeCharacterCode": "VGB",
+    "CallingCode": "+1284",
+    "CommonName": "British Virgin Islands",
+    "OfficialName": "Virgin Islands",
+    "CommonNativeName": "British Virgin Islands",
+    "OfficialNativeName": "Virgin Islands"
+  },
+  {
+    "CountryId": 236,
+    "TwoCharacterCode": "VI",
+    "ThreeCharacterCode": "VIR",
+    "CallingCode": "+1340",
+    "CommonName": "United States Virgin Islands",
+    "OfficialName": "Virgin Islands of the United States",
+    "CommonNativeName": "United States Virgin Islands",
+    "OfficialNativeName": "Virgin Islands of the United States"
+  },
+  {
+    "CountryId": 237,
+    "TwoCharacterCode": "VN",
+    "ThreeCharacterCode": "VNM",
+    "CallingCode": "+84",
+    "CommonName": "Vietnam",
+    "OfficialName": "Socialist Republic of Vietnam",
+    "CommonNativeName": "Việt Nam",
+    "OfficialNativeName": "Cộng hòa xã hội chủ nghĩa Việt Nam"
+  },
+  {
+    "CountryId": 238,
+    "TwoCharacterCode": "VU",
+    "ThreeCharacterCode": "VUT",
+    "CallingCode": "+678",
+    "CommonName": "Vanuatu",
+    "OfficialName": "Republic of Vanuatu",
+    "CommonNativeName": "Vanuatu",
+    "OfficialNativeName": "Ripablik blong Vanuatu"
+  },
+  {
+    "CountryId": 239,
+    "TwoCharacterCode": "WF",
+    "ThreeCharacterCode": "WLF",
+    "CallingCode": "+681",
+    "CommonName": "Wallis and Futuna",
+    "OfficialName": "Territory of the Wallis and Futuna Islands",
+    "CommonNativeName": "Wallis et Futuna",
+    "OfficialNativeName": "Territoire des îles Wallis et Futuna"
+  },
+  {
+    "CountryId": 240,
+    "TwoCharacterCode": "WS",
+    "ThreeCharacterCode": "WSM",
+    "CallingCode": "+685",
+    "CommonName": "Samoa",
+    "OfficialName": "Independent State of Samoa",
+    "CommonNativeName": "Samoa",
+    "OfficialNativeName": "Independent State of Samoa"
+  },
+  {
+    "CountryId": 241,
+    "TwoCharacterCode": "YE",
+    "ThreeCharacterCode": "YEM",
+    "CallingCode": "+967",
+    "CommonName": "Yemen",
+    "OfficialName": "Republic of Yemen",
+    "CommonNativeName": "اليَمَن",
+    "OfficialNativeName": "الجمهورية اليمنية"
+  },
+  {
+    "CountryId": 242,
+    "TwoCharacterCode": "ZA",
+    "ThreeCharacterCode": "ZAF",
+    "CallingCode": "+27",
+    "CommonName": "South Africa",
+    "OfficialName": "Republic of South Africa",
+    "CommonNativeName": "South Africa",
+    "OfficialNativeName": "Republiek van Suid-Afrika"
+  },
+  {
+    "CountryId": 243,
+    "TwoCharacterCode": "ZM",
+    "ThreeCharacterCode": "ZMB",
+    "CallingCode": "+260",
+    "CommonName": "Zambia",
+    "OfficialName": "Republic of Zambia",
+    "CommonNativeName": "Zambia",
+    "OfficialNativeName": "Republic of Zambia"
+  },
+  {
+    "CountryId": 244,
+    "TwoCharacterCode": "ZW",
+    "ThreeCharacterCode": "ZWE",
+    "CallingCode": "+263",
+    "CommonName": "Zimbabwe",
+    "OfficialName": "Republic of Zimbabwe",
+    "CommonNativeName": "Zimbabwe",
+    "OfficialNativeName": "Republic of Zimbabwe"
+  }
+]

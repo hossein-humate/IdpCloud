@@ -1,0 +1,66 @@
+﻿@implements IDisposable
+
+<div class="my-2 flex flex-col p-2 bg-white shadow-md hover:shodow-lg rounded">
+    <div class="flex items-center justify-between">
+        <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 class="p-4 w-16 h-16 rounded-2xl @ToastSettings.IconClass" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div class="flex flex-col mr-3">
+                <div class="font-medium leading-none">@ToastSettings.Heading</div>
+                <p class="text-sm text-gray-600 leading-none mt-1">
+                    @ToastSettings.Message
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="w-full">
+        <div class="@ToastSettings.BaseClass" style="height: 10px;width: @_progress%"></div>
+    </div>
+</div>
+
+
+@code{
+    [CascadingParameter] private ToastHost ToastsContainer { get; set; }
+
+    [Parameter] public Guid ToastId { get; set; }
+    [Parameter] public ToastSettings ToastSettings { get; set; }
+    [Parameter] public int Timeout { get; set; }
+
+    private CountdownTimer _countdownTimer;
+    private int _progress = 100;
+
+    protected override void OnInitialized()
+    {
+        _countdownTimer = new CountdownTimer(Timeout);
+        _countdownTimer.OnTick += CalculateProgress;
+        _countdownTimer.OnElapsed += Close;
+        _countdownTimer.Start();
+
+    }
+
+    private async void CalculateProgress(int percentComplete)
+    {
+        _progress = 100 - percentComplete;
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private void Close()
+    {
+        ToastsContainer.RemoveToast(ToastId);
+    }
+
+    private void ToastClick()
+    {
+        ToastSettings.OnClick?.Invoke();
+    }
+
+    public void Dispose()
+    {
+        _countdownTimer.Dispose();
+        _countdownTimer = null;
+    }
+}

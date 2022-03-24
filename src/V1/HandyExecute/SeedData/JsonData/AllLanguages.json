@@ -1,0 +1,682 @@
+﻿[
+  {
+    "LanguageId": 1,
+    "Code": "af-ZA",
+    "Name": "Afrikaans - South Africa"
+  },
+  {
+    "LanguageId": 2,
+    "Code": "sq-AL",
+    "Name": "Albanian - Albania"
+  },
+  {
+    "LanguageId": 3,
+    "Code": "ar-DZ",
+    "Name": "Arabic - Algeria"
+  },
+  {
+    "LanguageId": 4,
+    "Code": "ar-BH",
+    "Name": "Arabic - Bahrain"
+  },
+  {
+    "LanguageId": 5,
+    "Code": "ar-EG",
+    "Name": "Arabic - Egypt"
+  },
+  {
+    "LanguageId": 6,
+    "Code": "ar-IQ",
+    "Name": "Arabic - Iraq"
+  },
+  {
+    "LanguageId": 7,
+    "Code": "ar-JO",
+    "Name": "Arabic - Jordan"
+  },
+  {
+    "LanguageId": 8,
+    "Code": "ar-KW",
+    "Name": "Arabic - Kuwait"
+  },
+  {
+    "LanguageId": 9,
+    "Code": "ar-LB",
+    "Name": "Arabic - Lebanon"
+  },
+  {
+    "LanguageId": 10,
+    "Code": "ar-LY",
+    "Name": "Arabic - Libya"
+  },
+  {
+    "LanguageId": 11,
+    "Code": "ar-MA",
+    "Name": "Arabic - Morocco"
+  },
+  {
+    "LanguageId": 12,
+    "Code": "ar-OM",
+    "Name": "Arabic - Oman"
+  },
+  {
+    "LanguageId": 13,
+    "Code": "ar-QA",
+    "Name": "Arabic - Qatar"
+  },
+  {
+    "LanguageId": 14,
+    "Code": "ar-SA",
+    "Name": "Arabic - Saudi Arabia"
+  },
+  {
+    "LanguageId": 15,
+    "Code": "ar-SY",
+    "Name": "Arabic - Syria"
+  },
+  {
+    "LanguageId": 16,
+    "Code": "ar-TN",
+    "Name": "Arabic - Tunisia"
+  },
+  {
+    "LanguageId": 17,
+    "Code": "ar-AE",
+    "Name": "Arabic - United Arab Emirates"
+  },
+  {
+    "LanguageId": 18,
+    "Code": "ar-YE",
+    "Name": "Arabic - Yemen"
+  },
+  {
+    "LanguageId": 19,
+    "Code": "hy-AM",
+    "Name": "Armenian - Armenia"
+  },
+  {
+    "LanguageId": 20,
+    "Code": "Cy-az-AZ",
+    "Name": "Azeri (Cyrillic) - Azerbaijan"
+  },
+  {
+    "LanguageId": 21,
+    "Code": "Lt-az-AZ",
+    "Name": "Azeri (Latin) - Azerbaijan"
+  },
+  {
+    "LanguageId": 22,
+    "Code": "eu-ES",
+    "Name": "Basque - Basque"
+  },
+  {
+    "LanguageId": 23,
+    "Code": "be-BY",
+    "Name": "Belarusian - Belarus"
+  },
+  {
+    "LanguageId": 24,
+    "Code": "bg-BG",
+    "Name": "Bulgarian - Bulgaria"
+  },
+  {
+    "LanguageId": 25,
+    "Code": "ca-ES",
+    "Name": "Catalan - Catalan"
+  },
+  {
+    "LanguageId": 26,
+    "Code": "zh-CN",
+    "Name": "Chinese - China"
+  },
+  {
+    "LanguageId": 27,
+    "Code": "zh-HK",
+    "Name": "Chinese - Hong Kong SAR"
+  },
+  {
+    "LanguageId": 28,
+    "Code": "zh-MO",
+    "Name": "Chinese - Macau SAR"
+  },
+  {
+    "LanguageId": 29,
+    "Code": "zh-SG",
+    "Name": "Chinese - Singapore"
+  },
+  {
+    "LanguageId": 30,
+    "Code": "zh-TW",
+    "Name": "Chinese - Taiwan"
+  },
+  {
+    "LanguageId": 31,
+    "Code": "zh-CHS",
+    "Name": "Chinese (Simplified)"
+  },
+  {
+    "LanguageId": 32,
+    "Code": "zh-CHT",
+    "Name": "Chinese (Traditional)"
+  },
+  {
+    "LanguageId": 33,
+    "Code": "hr-HR",
+    "Name": "Croatian - Croatia"
+  },
+  {
+    "LanguageId": 34,
+    "Code": "cs-CZ",
+    "Name": "Czech - Czech Republic"
+  },
+  {
+    "LanguageId": 35,
+    "Code": "da-DK",
+    "Name": "Danish - Denmark"
+  },
+  {
+    "LanguageId": 36,
+    "Code": "div-MV",
+    "Name": "Dhivehi - Maldives"
+  },
+  {
+    "LanguageId": 37,
+    "Code": "nl-BE",
+    "Name": "Dutch - Belgium"
+  },
+  {
+    "LanguageId": 38,
+    "Code": "nl-NL",
+    "Name": "Dutch - The Netherlands"
+  },
+  {
+    "LanguageId": 39,
+    "Code": "en-AU",
+    "Name": "English - Australia"
+  },
+  {
+    "LanguageId": 40,
+    "Code": "en-BZ",
+    "Name": "English - Belize"
+  },
+  {
+    "LanguageId": 41,
+    "Code": "en-CA",
+    "Name": "English - Canada"
+  },
+  {
+    "LanguageId": 42,
+    "Code": "en-CB",
+    "Name": "English - Caribbean"
+  },
+  {
+    "LanguageId": 43,
+    "Code": "en-IE",
+    "Name": "English - Ireland"
+  },
+  {
+    "LanguageId": 44,
+    "Code": "en-JM",
+    "Name": "English - Jamaica"
+  },
+  {
+    "LanguageId": 45,
+    "Code": "en-NZ",
+    "Name": "English - New Zealand"
+  },
+  {
+    "LanguageId": 46,
+    "Code": "en-PH",
+    "Name": "English - Philippines"
+  },
+  {
+    "LanguageId": 47,
+    "Code": "en-ZA",
+    "Name": "English - South Africa"
+  },
+  {
+    "LanguageId": 48,
+    "Code": "en-TT",
+    "Name": "English - Trinidad and Tobago"
+  },
+  {
+    "LanguageId": 49,
+    "Code": "en-GB",
+    "Name": "English - United Kingdom"
+  },
+  {
+    "LanguageId": 50,
+    "Code": "en-US",
+    "Name": "English - United States"
+  },
+  {
+    "LanguageId": 51,
+    "Code": "en-ZW",
+    "Name": "English - Zimbabwe"
+  },
+  {
+    "LanguageId": 52,
+    "Code": "et-EE",
+    "Name": "Estonian - Estonia"
+  },
+  {
+    "LanguageId": 53,
+    "Code": "fo-FO",
+    "Name": "Faroese - Faroe Islands"
+  },
+  {
+    "LanguageId": 54,
+    "Code": "fa-IR",
+    "Name": "Farsi - Iran"
+  },
+  {
+    "LanguageId": 55,
+    "Code": "fi-FI",
+    "Name": "Finnish - Finland"
+  },
+  {
+    "LanguageId": 56,
+    "Code": "fr-BE",
+    "Name": "French - Belgium"
+  },
+  {
+    "LanguageId": 57,
+    "Code": "fr-CA",
+    "Name": "French - Canada"
+  },
+  {
+    "LanguageId": 58,
+    "Code": "fr-FR",
+    "Name": "French - France"
+  },
+  {
+    "LanguageId": 59,
+    "Code": "fr-LU",
+    "Name": "French - Luxembourg"
+  },
+  {
+    "LanguageId": 60,
+    "Code": "fr-MC",
+    "Name": "French - Monaco"
+  },
+  {
+    "LanguageId": 61,
+    "Code": "fr-CH",
+    "Name": "French - Switzerland"
+  },
+  {
+    "LanguageId": 62,
+    "Code": "gl-ES",
+    "Name": "Galician - Galician"
+  },
+  {
+    "LanguageId": 63,
+    "Code": "ka-GE",
+    "Name": "Georgian - Georgia"
+  },
+  {
+    "LanguageId": 64,
+    "Code": "de-AT",
+    "Name": "German - Austria"
+  },
+  {
+    "LanguageId": 65,
+    "Code": "de-DE",
+    "Name": "German - Germany"
+  },
+  {
+    "LanguageId": 66,
+    "Code": "de-LI",
+    "Name": "German - Liechtenstein"
+  },
+  {
+    "LanguageId": 67,
+    "Code": "de-LU",
+    "Name": "German - Luxembourg"
+  },
+  {
+    "LanguageId": 68,
+    "Code": "de-CH",
+    "Name": "German - Switzerland"
+  },
+  {
+    "LanguageId": 69,
+    "Code": "el-GR",
+    "Name": "Greek - Greece"
+  },
+  {
+    "LanguageId": 70,
+    "Code": "gu-IN",
+    "Name": "Gujarati - India"
+  },
+  {
+    "LanguageId": 71,
+    "Code": "he-IL",
+    "Name": "Hebrew - Israel"
+  },
+  {
+    "LanguageId": 72,
+    "Code": "hi-IN",
+    "Name": "Hindi - India"
+  },
+  {
+    "LanguageId": 73,
+    "Code": "hu-HU",
+    "Name": "Hungarian - Hungary"
+  },
+  {
+    "LanguageId": 74,
+    "Code": "is-IS",
+    "Name": "Icelandic - Iceland"
+  },
+  {
+    "LanguageId": 75,
+    "Code": "id-ID",
+    "Name": "Indonesian - Indonesia"
+  },
+  {
+    "LanguageId": 76,
+    "Code": "it-IT",
+    "Name": "Italian - Italy"
+  },
+  {
+    "LanguageId": 77,
+    "Code": "it-CH",
+    "Name": "Italian - Switzerland"
+  },
+  {
+    "LanguageId": 78,
+    "Code": "ja-JP",
+    "Name": "Japanese - Japan"
+  },
+  {
+    "LanguageId": 79,
+    "Code": "kn-IN",
+    "Name": "Kannada - India"
+  },
+  {
+    "LanguageId": 80,
+    "Code": "kk-KZ",
+    "Name": "Kazakh - Kazakhstan"
+  },
+  {
+    "LanguageId": 81,
+    "Code": "kok-IN",
+    "Name": "Konkani - India"
+  },
+  {
+    "LanguageId": 82,
+    "Code": "ko-KR",
+    "Name": "Korean - Korea"
+  },
+  {
+    "LanguageId": 83,
+    "Code": "ky-KZ",
+    "Name": "Kyrgyz - Kazakhstan"
+  },
+  {
+    "LanguageId": 84,
+    "Code": "lv-LV",
+    "Name": "Latvian - Latvia"
+  },
+  {
+    "LanguageId": 85,
+    "Code": "lt-LT",
+    "Name": "Lithuanian - Lithuania"
+  },
+  {
+    "LanguageId": 86,
+    "Code": "mk-MK",
+    "Name": "Macedonian (FYROM)"
+  },
+  {
+    "LanguageId": 87,
+    "Code": "ms-BN",
+    "Name": "Malay - Brunei"
+  },
+  {
+    "LanguageId": 88,
+    "Code": "ms-MY",
+    "Name": "Malay - Malaysia"
+  },
+  {
+    "LanguageId": 89,
+    "Code": "mr-IN",
+    "Name": "Marathi - India"
+  },
+  {
+    "LanguageId": 90,
+    "Code": "mn-MN",
+    "Name": "Mongolian - Mongolia"
+  },
+  {
+    "LanguageId": 91,
+    "Code": "nb-NO",
+    "Name": "Norwegian (BokmÃ¥l) - Norway"
+  },
+  {
+    "LanguageId": 92,
+    "Code": "nn-NO",
+    "Name": "Norwegian (Nynorsk) - Norway"
+  },
+  {
+    "LanguageId": 93,
+    "Code": "pl-PL",
+    "Name": "Polish - Poland"
+  },
+  {
+    "LanguageId": 94,
+    "Code": "pt-BR",
+    "Name": "Portuguese - Brazil"
+  },
+  {
+    "LanguageId": 95,
+    "Code": "pt-PT",
+    "Name": "Portuguese - Portugal"
+  },
+  {
+    "LanguageId": 96,
+    "Code": "pa-IN",
+    "Name": "Punjabi - India"
+  },
+  {
+    "LanguageId": 97,
+    "Code": "ro-RO",
+    "Name": "Romanian - Romania"
+  },
+  {
+    "LanguageId": 98,
+    "Code": "ru-RU",
+    "Name": "Russian - Russia"
+  },
+  {
+    "LanguageId": 99,
+    "Code": "sa-IN",
+    "Name": "Sanskrit - India"
+  },
+  {
+    "LanguageId": 100,
+    "Code": "Cy-sr-SP",
+    "Name": "Serbian (Cyrillic) - Serbia"
+  },
+  {
+    "LanguageId": 101,
+    "Code": "Lt-sr-SP",
+    "Name": "Serbian (Latin) - Serbia"
+  },
+  {
+    "LanguageId": 102,
+    "Code": "sk-SK",
+    "Name": "Slovak - Slovakia"
+  },
+  {
+    "LanguageId": 103,
+    "Code": "sl-SI",
+    "Name": "Slovenian - Slovenia"
+  },
+  {
+    "LanguageId": 104,
+    "Code": "es-AR",
+    "Name": "Spanish - Argentina"
+  },
+  {
+    "LanguageId": 105,
+    "Code": "es-BO",
+    "Name": "Spanish - Bolivia"
+  },
+  {
+    "LanguageId": 106,
+    "Code": "es-CL",
+    "Name": "Spanish - Chile"
+  },
+  {
+    "LanguageId": 107,
+    "Code": "es-CO",
+    "Name": "Spanish - Colombia"
+  },
+  {
+    "LanguageId": 108,
+    "Code": "es-CR",
+    "Name": "Spanish - Costa Rica"
+  },
+  {
+    "LanguageId": 109,
+    "Code": "es-DO",
+    "Name": "Spanish - Dominican Republic"
+  },
+  {
+    "LanguageId": 110,
+    "Code": "es-EC",
+    "Name": "Spanish - Ecuador"
+  },
+  {
+    "LanguageId": 111,
+    "Code": "es-SV",
+    "Name": "Spanish - El Salvador"
+  },
+  {
+    "LanguageId": 112,
+    "Code": "es-GT",
+    "Name": "Spanish - Guatemala"
+  },
+  {
+    "LanguageId": 113,
+    "Code": "es-HN",
+    "Name": "Spanish - Honduras"
+  },
+  {
+    "LanguageId": 114,
+    "Code": "es-MX",
+    "Name": "Spanish - Mexico"
+  },
+  {
+    "LanguageId": 115,
+    "Code": "es-NI",
+    "Name": "Spanish - Nicaragua"
+  },
+  {
+    "LanguageId": 116,
+    "Code": "es-PA",
+    "Name": "Spanish - Panama"
+  },
+  {
+    "LanguageId": 117,
+    "Code": "es-PY",
+    "Name": "Spanish - Paraguay"
+  },
+  {
+    "LanguageId": 118,
+    "Code": "es-PE",
+    "Name": "Spanish - Peru"
+  },
+  {
+    "LanguageId": 119,
+    "Code": "es-PR",
+    "Name": "Spanish - Puerto Rico"
+  },
+  {
+    "LanguageId": 120,
+    "Code": "es-ES",
+    "Name": "Spanish - Spain"
+  },
+  {
+    "LanguageId": 121,
+    "Code": "es-UY",
+    "Name": "Spanish - Uruguay"
+  },
+  {
+    "LanguageId": 122,
+    "Code": "es-VE",
+    "Name": "Spanish - Venezuela"
+  },
+  {
+    "LanguageId": 123,
+    "Code": "sw-KE",
+    "Name": "Swahili - Kenya"
+  },
+  {
+    "LanguageId": 124,
+    "Code": "sv-FI",
+    "Name": "Swedish - Finland"
+  },
+  {
+    "LanguageId": 125,
+    "Code": "sv-SE",
+    "Name": "Swedish - Sweden"
+  },
+  {
+    "LanguageId": 126,
+    "Code": "syr-SY",
+    "Name": "Syriac - Syria"
+  },
+  {
+    "LanguageId": 127,
+    "Code": "ta-IN",
+    "Name": "Tamil - India"
+  },
+  {
+    "LanguageId": 128,
+    "Code": "tt-RU",
+    "Name": "Tatar - Russia"
+  },
+  {
+    "LanguageId": 129,
+    "Code": "te-IN",
+    "Name": "Telugu - India"
+  },
+  {
+    "LanguageId": 130,
+    "Code": "th-TH",
+    "Name": "Thai - Thailand"
+  },
+  {
+    "LanguageId": 131,
+    "Code": "tr-TR",
+    "Name": "Turkish - Turkey"
+  },
+  {
+    "LanguageId": 132,
+    "Code": "uk-UA",
+    "Name": "Ukrainian - Ukraine"
+  },
+  {
+    "LanguageId": 133,
+    "Code": "ur-PK",
+    "Name": "Urdu - Pakistan"
+  },
+  {
+    "LanguageId": 134,
+    "Code": "Cy-uz-UZ",
+    "Name": "Uzbek (Cyrillic) - Uzbekistan"
+  },
+  {
+    "LanguageId": 135,
+    "Code": "Lt-uz-UZ",
+    "Name": "Uzbek (Latin) - Uzbekistan"
+  },
+  {
+    "LanguageId": 136,
+    "Code": "vi-VN",
+    "Name": "VietNamese - Vietnam"
+  }
+]

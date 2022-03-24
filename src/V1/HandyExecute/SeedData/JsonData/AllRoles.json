@@ -1,0 +1,20 @@
+[
+  {
+    "RoleId": "1f4e9f9b-33b2-4b07-b23f-e95a7185c495",
+    "CreateDate": "19323729",
+    "UpdateDate": "19323729",
+    "DeleteDate": null,
+    "Name": "Public user",
+    "IsDefault": true,
+    "SoftwareId": "126a771c-e319-472f-846d-91828e0f5e09"
+  },
+  {
+    "RoleId": "2737885f-8527-48ac-878e-a923761a9027",
+    "CreateDate": "19323729",
+    "UpdateDate": "19323729",
+    "DeleteDate": null,
+    "Name": "Administrator",
+    "IsDefault": false,
+    "SoftwareId": "126a771c-e319-472f-846d-91828e0f5e09"
+  }
+]

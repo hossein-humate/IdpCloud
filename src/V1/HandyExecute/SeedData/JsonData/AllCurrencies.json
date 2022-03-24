@@ -1,0 +1,1470 @@
+﻿[
+  {
+    "CurrencyId": 1,
+    "Symbol": "$",
+    "Name": "US Dollar",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "USD",
+    "PluralName": "US dollars"
+  },
+  {
+    "CurrencyId": 2,
+    "Symbol": "CA$",
+    "Name": "Canadian Dollar",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "CAD",
+    "PluralName": "Canadian dollars"
+  },
+  {
+    "CurrencyId": 3,
+    "Symbol": "€",
+    "Name": "Euro",
+    "NativeSymbol": "€",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "EUR",
+    "PluralName": "euros"
+  },
+  {
+    "CurrencyId": 4,
+    "Symbol": "AED",
+    "Name": "United Arab Emirates Dirham",
+    "NativeSymbol": "د.إ.‏",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "AED",
+    "PluralName": "UAE dirhams"
+  },
+  {
+    "CurrencyId": 5,
+    "Symbol": "Af",
+    "Name": "Afghan Afghani",
+    "NativeSymbol": "؋",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "AFN",
+    "PluralName": "Afghan Afghanis"
+  },
+  {
+    "CurrencyId": 6,
+    "Symbol": "ALL",
+    "Name": "Albanian Lek",
+    "NativeSymbol": "Lek",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "ALL",
+    "PluralName": "Albanian lekë"
+  },
+  {
+    "CurrencyId": 7,
+    "Symbol": "AMD",
+    "Name": "Armenian Dram",
+    "NativeSymbol": "դր.",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "AMD",
+    "PluralName": "Armenian drams"
+  },
+  {
+    "CurrencyId": 8,
+    "Symbol": "AR$",
+    "Name": "Argentine Peso",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "ARS",
+    "PluralName": "Argentine pesos"
+  },
+  {
+    "CurrencyId": 9,
+    "Symbol": "AU$",
+    "Name": "Australian Dollar",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "AUD",
+    "PluralName": "Australian dollars"
+  },
+  {
+    "CurrencyId": 10,
+    "Symbol": "man.",
+    "Name": "Azerbaijani Manat",
+    "NativeSymbol": "ман.",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "AZN",
+    "PluralName": "Azerbaijani manats"
+  },
+  {
+    "CurrencyId": 11,
+    "Symbol": "KM",
+    "Name": "Bosnia-Herzegovina Convertible Mark",
+    "NativeSymbol": "KM",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "BAM",
+    "PluralName": "Bosnia-Herzegovina convertible marks"
+  },
+  {
+    "CurrencyId": 12,
+    "Symbol": "Tk",
+    "Name": "Bangladeshi Taka",
+    "NativeSymbol": "৳",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "BDT",
+    "PluralName": "Bangladeshi takas"
+  },
+  {
+    "CurrencyId": 13,
+    "Symbol": "BGN",
+    "Name": "Bulgarian Lev",
+    "NativeSymbol": "лв.",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "BGN",
+    "PluralName": "Bulgarian leva"
+  },
+  {
+    "CurrencyId": 14,
+    "Symbol": "BD",
+    "Name": "Bahraini Dinar",
+    "NativeSymbol": "د.ب.‏",
+    "DecimalDigits": 3,
+    "Rounding": 0,
+    "Code": "BHD",
+    "PluralName": "Bahraini dinars"
+  },
+  {
+    "CurrencyId": 15,
+    "Symbol": "FBu",
+    "Name": "Burundian Franc",
+    "NativeSymbol": "FBu",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "BIF",
+    "PluralName": "Burundian francs"
+  },
+  {
+    "CurrencyId": 16,
+    "Symbol": "BN$",
+    "Name": "Brunei Dollar",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "BND",
+    "PluralName": "Brunei dollars"
+  },
+  {
+    "CurrencyId": 17,
+    "Symbol": "Bs",
+    "Name": "Bolivian Boliviano",
+    "NativeSymbol": "Bs",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "BOB",
+    "PluralName": "Bolivian bolivianos"
+  },
+  {
+    "CurrencyId": 18,
+    "Symbol": "R$",
+    "Name": "Brazilian Real",
+    "NativeSymbol": "R$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "BRL",
+    "PluralName": "Brazilian reals"
+  },
+  {
+    "CurrencyId": 19,
+    "Symbol": "BWP",
+    "Name": "Botswanan Pula",
+    "NativeSymbol": "P",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "BWP",
+    "PluralName": "Botswanan pulas"
+  },
+  {
+    "CurrencyId": 20,
+    "Symbol": "BYR",
+    "Name": "Belarusian Ruble",
+    "NativeSymbol": "BYR",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "BYR",
+    "PluralName": "Belarusian rubles"
+  },
+  {
+    "CurrencyId": 21,
+    "Symbol": "BZ$",
+    "Name": "Belize Dollar",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "BZD",
+    "PluralName": "Belize dollars"
+  },
+  {
+    "CurrencyId": 22,
+    "Symbol": "CDF",
+    "Name": "Congolese Franc",
+    "NativeSymbol": "FrCD",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "CDF",
+    "PluralName": "Congolese francs"
+  },
+  {
+    "CurrencyId": 23,
+    "Symbol": "CHF",
+    "Name": "Swiss Franc",
+    "NativeSymbol": "CHF",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "CHF",
+    "PluralName": "Swiss francs"
+  },
+  {
+    "CurrencyId": 24,
+    "Symbol": "CL$",
+    "Name": "Chilean Peso",
+    "NativeSymbol": "$",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "CLP",
+    "PluralName": "Chilean pesos"
+  },
+  {
+    "CurrencyId": 25,
+    "Symbol": "CN¥",
+    "Name": "Chinese Yuan",
+    "NativeSymbol": "CN¥",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "CNY",
+    "PluralName": "Chinese yuan"
+  },
+  {
+    "CurrencyId": 26,
+    "Symbol": "CO$",
+    "Name": "Colombian Peso",
+    "NativeSymbol": "$",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "COP",
+    "PluralName": "Colombian pesos"
+  },
+  {
+    "CurrencyId": 27,
+    "Symbol": "₡",
+    "Name": "Costa Rican Colón",
+    "NativeSymbol": "₡",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "CRC",
+    "PluralName": "Costa Rican colóns"
+  },
+  {
+    "CurrencyId": 28,
+    "Symbol": "CV$",
+    "Name": "Cape Verdean Escudo",
+    "NativeSymbol": "CV$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "CVE",
+    "PluralName": "Cape Verdean escudos"
+  },
+  {
+    "CurrencyId": 29,
+    "Symbol": "Kč",
+    "Name": "Czech Republic Koruna",
+    "NativeSymbol": "Kč",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "CZK",
+    "PluralName": "Czech Republic korunas"
+  },
+  {
+    "CurrencyId": 30,
+    "Symbol": "Fdj",
+    "Name": "Djiboutian Franc",
+    "NativeSymbol": "Fdj",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "DJF",
+    "PluralName": "Djiboutian francs"
+  },
+  {
+    "CurrencyId": 31,
+    "Symbol": "Dkr",
+    "Name": "Danish Krone",
+    "NativeSymbol": "kr",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "DKK",
+    "PluralName": "Danish kroner"
+  },
+  {
+    "CurrencyId": 32,
+    "Symbol": "RD$",
+    "Name": "Dominican Peso",
+    "NativeSymbol": "RD$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "DOP",
+    "PluralName": "Dominican pesos"
+  },
+  {
+    "CurrencyId": 33,
+    "Symbol": "DA",
+    "Name": "Algerian Dinar",
+    "NativeSymbol": "د.ج.‏",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "DZD",
+    "PluralName": "Algerian dinars"
+  },
+  {
+    "CurrencyId": 34,
+    "Symbol": "Ekr",
+    "Name": "Estonian Kroon",
+    "NativeSymbol": "kr",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "EEK",
+    "PluralName": "Estonian kroons"
+  },
+  {
+    "CurrencyId": 35,
+    "Symbol": "EGP",
+    "Name": "Egyptian Pound",
+    "NativeSymbol": "ج.م.‏",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "EGP",
+    "PluralName": "Egyptian pounds"
+  },
+  {
+    "CurrencyId": 36,
+    "Symbol": "Nfk",
+    "Name": "Eritrean Nakfa",
+    "NativeSymbol": "Nfk",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "ERN",
+    "PluralName": "Eritrean nakfas"
+  },
+  {
+    "CurrencyId": 37,
+    "Symbol": "Br",
+    "Name": "Ethiopian Birr",
+    "NativeSymbol": "Br",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "ETB",
+    "PluralName": "Ethiopian birrs"
+  },
+  {
+    "CurrencyId": 38,
+    "Symbol": "£",
+    "Name": "British Pound Sterling",
+    "NativeSymbol": "£",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "GBP",
+    "PluralName": "British pounds sterling"
+  },
+  {
+    "CurrencyId": 39,
+    "Symbol": "GEL",
+    "Name": "Georgian Lari",
+    "NativeSymbol": "GEL",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "GEL",
+    "PluralName": "Georgian laris"
+  },
+  {
+    "CurrencyId": 40,
+    "Symbol": "GH₵",
+    "Name": "Ghanaian Cedi",
+    "NativeSymbol": "GH₵",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "GHS",
+    "PluralName": "Ghanaian cedis"
+  },
+  {
+    "CurrencyId": 41,
+    "Symbol": "FG",
+    "Name": "Guinean Franc",
+    "NativeSymbol": "FG",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "GNF",
+    "PluralName": "Guinean francs"
+  },
+  {
+    "CurrencyId": 42,
+    "Symbol": "GTQ",
+    "Name": "Guatemalan Quetzal",
+    "NativeSymbol": "Q",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "GTQ",
+    "PluralName": "Guatemalan quetzals"
+  },
+  {
+    "CurrencyId": 43,
+    "Symbol": "HK$",
+    "Name": "Hong Kong Dollar",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "HKD",
+    "PluralName": "Hong Kong dollars"
+  },
+  {
+    "CurrencyId": 44,
+    "Symbol": "HNL",
+    "Name": "Honduran Lempira",
+    "NativeSymbol": "L",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "HNL",
+    "PluralName": "Honduran lempiras"
+  },
+  {
+    "CurrencyId": 45,
+    "Symbol": "kn",
+    "Name": "Croatian Kuna",
+    "NativeSymbol": "kn",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "HRK",
+    "PluralName": "Croatian kunas"
+  },
+  {
+    "CurrencyId": 46,
+    "Symbol": "Ft",
+    "Name": "Hungarian Forint",
+    "NativeSymbol": "Ft",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "HUF",
+    "PluralName": "Hungarian forints"
+  },
+  {
+    "CurrencyId": 47,
+    "Symbol": "Rp",
+    "Name": "Indonesian Rupiah",
+    "NativeSymbol": "Rp",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "IDR",
+    "PluralName": "Indonesian rupiahs"
+  },
+  {
+    "CurrencyId": 48,
+    "Symbol": "₪",
+    "Name": "Israeli New Sheqel",
+    "NativeSymbol": "₪",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "ILS",
+    "PluralName": "Israeli new sheqels"
+  },
+  {
+    "CurrencyId": 49,
+    "Symbol": "Rs",
+    "Name": "Indian Rupee",
+    "NativeSymbol": "টকা",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "INR",
+    "PluralName": "Indian rupees"
+  },
+  {
+    "CurrencyId": 50,
+    "Symbol": "IQD",
+    "Name": "Iraqi Dinar",
+    "NativeSymbol": "د.ع.‏",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "IQD",
+    "PluralName": "Iraqi dinars"
+  },
+  {
+    "CurrencyId": 51,
+    "Symbol": "IRR",
+    "Name": "Iranian Rial",
+    "NativeSymbol": "﷼",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "IRR",
+    "PluralName": "Iranian rials"
+  },
+  {
+    "CurrencyId": 52,
+    "Symbol": "Ikr",
+    "Name": "Icelandic Króna",
+    "NativeSymbol": "kr",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "ISK",
+    "PluralName": "Icelandic krónur"
+  },
+  {
+    "CurrencyId": 53,
+    "Symbol": "J$",
+    "Name": "Jamaican Dollar",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "JMD",
+    "PluralName": "Jamaican dollars"
+  },
+  {
+    "CurrencyId": 54,
+    "Symbol": "JD",
+    "Name": "Jordanian Dinar",
+    "NativeSymbol": "د.أ.‏",
+    "DecimalDigits": 3,
+    "Rounding": 0,
+    "Code": "JOD",
+    "PluralName": "Jordanian dinars"
+  },
+  {
+    "CurrencyId": 55,
+    "Symbol": "¥",
+    "Name": "Japanese Yen",
+    "NativeSymbol": "￥",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "JPY",
+    "PluralName": "Japanese yen"
+  },
+  {
+    "CurrencyId": 56,
+    "Symbol": "Ksh",
+    "Name": "Kenyan Shilling",
+    "NativeSymbol": "Ksh",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "KES",
+    "PluralName": "Kenyan shillings"
+  },
+  {
+    "CurrencyId": 57,
+    "Symbol": "KHR",
+    "Name": "Cambodian Riel",
+    "NativeSymbol": "៛",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "KHR",
+    "PluralName": "Cambodian riels"
+  },
+  {
+    "CurrencyId": 58,
+    "Symbol": "CF",
+    "Name": "Comorian Franc",
+    "NativeSymbol": "FC",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "KMF",
+    "PluralName": "Comorian francs"
+  },
+  {
+    "CurrencyId": 59,
+    "Symbol": "₩",
+    "Name": "South Korean Won",
+    "NativeSymbol": "₩",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "KRW",
+    "PluralName": "South Korean won"
+  },
+  {
+    "CurrencyId": 60,
+    "Symbol": "KD",
+    "Name": "Kuwaiti Dinar",
+    "NativeSymbol": "د.ك.‏",
+    "DecimalDigits": 3,
+    "Rounding": 0,
+    "Code": "KWD",
+    "PluralName": "Kuwaiti dinars"
+  },
+  {
+    "CurrencyId": 61,
+    "Symbol": "KZT",
+    "Name": "Kazakhstani Tenge",
+    "NativeSymbol": "тңг.",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "KZT",
+    "PluralName": "Kazakhstani tenges"
+  },
+  {
+    "CurrencyId": 62,
+    "Symbol": "LB£",
+    "Name": "Lebanese Pound",
+    "NativeSymbol": "ل.ل.‏",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "LBP",
+    "PluralName": "Lebanese pounds"
+  },
+  {
+    "CurrencyId": 63,
+    "Symbol": "SLRs",
+    "Name": "Sri Lankan Rupee",
+    "NativeSymbol": "SL Re",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "LKR",
+    "PluralName": "Sri Lankan rupees"
+  },
+  {
+    "CurrencyId": 64,
+    "Symbol": "Lt",
+    "Name": "Lithuanian Litas",
+    "NativeSymbol": "Lt",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "LTL",
+    "PluralName": "Lithuanian litai"
+  },
+  {
+    "CurrencyId": 65,
+    "Symbol": "Ls",
+    "Name": "Latvian Lats",
+    "NativeSymbol": "Ls",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "LVL",
+    "PluralName": "Latvian lati"
+  },
+  {
+    "CurrencyId": 66,
+    "Symbol": "LD",
+    "Name": "Libyan Dinar",
+    "NativeSymbol": "د.ل.‏",
+    "DecimalDigits": 3,
+    "Rounding": 0,
+    "Code": "LYD",
+    "PluralName": "Libyan dinars"
+  },
+  {
+    "CurrencyId": 67,
+    "Symbol": "MAD",
+    "Name": "Moroccan Dirham",
+    "NativeSymbol": "د.م.‏",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "MAD",
+    "PluralName": "Moroccan dirhams"
+  },
+  {
+    "CurrencyId": 68,
+    "Symbol": "MDL",
+    "Name": "Moldovan Leu",
+    "NativeSymbol": "MDL",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "MDL",
+    "PluralName": "Moldovan lei"
+  },
+  {
+    "CurrencyId": 69,
+    "Symbol": "MGA",
+    "Name": "Malagasy Ariary",
+    "NativeSymbol": "MGA",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "MGA",
+    "PluralName": "Malagasy Ariaries"
+  },
+  {
+    "CurrencyId": 70,
+    "Symbol": "MKD",
+    "Name": "Macedonian Denar",
+    "NativeSymbol": "MKD",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "MKD",
+    "PluralName": "Macedonian denari"
+  },
+  {
+    "CurrencyId": 71,
+    "Symbol": "MMK",
+    "Name": "Myanma Kyat",
+    "NativeSymbol": "K",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "MMK",
+    "PluralName": "Myanma kyats"
+  },
+  {
+    "CurrencyId": 72,
+    "Symbol": "MOP$",
+    "Name": "Macanese Pataca",
+    "NativeSymbol": "MOP$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "MOP",
+    "PluralName": "Macanese patacas"
+  },
+  {
+    "CurrencyId": 73,
+    "Symbol": "MURs",
+    "Name": "Mauritian Rupee",
+    "NativeSymbol": "MURs",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "MUR",
+    "PluralName": "Mauritian rupees"
+  },
+  {
+    "CurrencyId": 74,
+    "Symbol": "MX$",
+    "Name": "Mexican Peso",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "MXN",
+    "PluralName": "Mexican pesos"
+  },
+  {
+    "CurrencyId": 75,
+    "Symbol": "RM",
+    "Name": "Malaysian Ringgit",
+    "NativeSymbol": "RM",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "MYR",
+    "PluralName": "Malaysian ringgits"
+  },
+  {
+    "CurrencyId": 76,
+    "Symbol": "MTn",
+    "Name": "Mozambican Metical",
+    "NativeSymbol": "MTn",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "MZN",
+    "PluralName": "Mozambican meticals"
+  },
+  {
+    "CurrencyId": 77,
+    "Symbol": "N$",
+    "Name": "Namibian Dollar",
+    "NativeSymbol": "N$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "NAD",
+    "PluralName": "Namibian dollars"
+  },
+  {
+    "CurrencyId": 78,
+    "Symbol": "₦",
+    "Name": "Nigerian Naira",
+    "NativeSymbol": "₦",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "NGN",
+    "PluralName": "Nigerian nairas"
+  },
+  {
+    "CurrencyId": 79,
+    "Symbol": "C$",
+    "Name": "Nicaraguan Córdoba",
+    "NativeSymbol": "C$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "NIO",
+    "PluralName": "Nicaraguan córdobas"
+  },
+  {
+    "CurrencyId": 80,
+    "Symbol": "Nkr",
+    "Name": "Norwegian Krone",
+    "NativeSymbol": "kr",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "NOK",
+    "PluralName": "Norwegian kroner"
+  },
+  {
+    "CurrencyId": 81,
+    "Symbol": "NPRs",
+    "Name": "Nepalese Rupee",
+    "NativeSymbol": "नेरू",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "NPR",
+    "PluralName": "Nepalese rupees"
+  },
+  {
+    "CurrencyId": 82,
+    "Symbol": "NZ$",
+    "Name": "New Zealand Dollar",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "NZD",
+    "PluralName": "New Zealand dollars"
+  },
+  {
+    "CurrencyId": 83,
+    "Symbol": "OMR",
+    "Name": "Omani Rial",
+    "NativeSymbol": "ر.ع.‏",
+    "DecimalDigits": 3,
+    "Rounding": 0,
+    "Code": "OMR",
+    "PluralName": "Omani rials"
+  },
+  {
+    "CurrencyId": 84,
+    "Symbol": "B/.",
+    "Name": "Panamanian Balboa",
+    "NativeSymbol": "B/.",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "PAB",
+    "PluralName": "Panamanian balboas"
+  },
+  {
+    "CurrencyId": 85,
+    "Symbol": "S/.",
+    "Name": "Peruvian Nuevo Sol",
+    "NativeSymbol": "S/.",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "PEN",
+    "PluralName": "Peruvian nuevos soles"
+  },
+  {
+    "CurrencyId": 86,
+    "Symbol": "₱",
+    "Name": "Philippine Peso",
+    "NativeSymbol": "₱",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "PHP",
+    "PluralName": "Philippine pesos"
+  },
+  {
+    "CurrencyId": 87,
+    "Symbol": "PKRs",
+    "Name": "Pakistani Rupee",
+    "NativeSymbol": "₨",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "PKR",
+    "PluralName": "Pakistani rupees"
+  },
+  {
+    "CurrencyId": 88,
+    "Symbol": "zł",
+    "Name": "Polish Zloty",
+    "NativeSymbol": "zł",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "PLN",
+    "PluralName": "Polish zlotys"
+  },
+  {
+    "CurrencyId": 89,
+    "Symbol": "₲",
+    "Name": "Paraguayan Guarani",
+    "NativeSymbol": "₲",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "PYG",
+    "PluralName": "Paraguayan guaranis"
+  },
+  {
+    "CurrencyId": 90,
+    "Symbol": "QR",
+    "Name": "Qatari Rial",
+    "NativeSymbol": "ر.ق.‏",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "QAR",
+    "PluralName": "Qatari rials"
+  },
+  {
+    "CurrencyId": 91,
+    "Symbol": "RON",
+    "Name": "Romanian Leu",
+    "NativeSymbol": "RON",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "RON",
+    "PluralName": "Romanian lei"
+  },
+  {
+    "CurrencyId": 92,
+    "Symbol": "din.",
+    "Name": "Serbian Dinar",
+    "NativeSymbol": "дин.",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "RSD",
+    "PluralName": "Serbian dinars"
+  },
+  {
+    "CurrencyId": 93,
+    "Symbol": "RUB",
+    "Name": "Russian Ruble",
+    "NativeSymbol": "руб.",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "RUB",
+    "PluralName": "Russian rubles"
+  },
+  {
+    "CurrencyId": 94,
+    "Symbol": "RWF",
+    "Name": "Rwandan Franc",
+    "NativeSymbol": "FR",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "RWF",
+    "PluralName": "Rwandan francs"
+  },
+  {
+    "CurrencyId": 95,
+    "Symbol": "SR",
+    "Name": "Saudi Riyal",
+    "NativeSymbol": "ر.س.‏",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "SAR",
+    "PluralName": "Saudi riyals"
+  },
+  {
+    "CurrencyId": 96,
+    "Symbol": "SDG",
+    "Name": "Sudanese Pound",
+    "NativeSymbol": "SDG",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "SDG",
+    "PluralName": "Sudanese pounds"
+  },
+  {
+    "CurrencyId": 97,
+    "Symbol": "Skr",
+    "Name": "Swedish Krona",
+    "NativeSymbol": "kr",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "SEK",
+    "PluralName": "Swedish kronor"
+  },
+  {
+    "CurrencyId": 98,
+    "Symbol": "S$",
+    "Name": "Singapore Dollar",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "SGD",
+    "PluralName": "Singapore dollars"
+  },
+  {
+    "CurrencyId": 99,
+    "Symbol": "Ssh",
+    "Name": "Somali Shilling",
+    "NativeSymbol": "Ssh",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "SOS",
+    "PluralName": "Somali shillings"
+  },
+  {
+    "CurrencyId": 100,
+    "Symbol": "SY£",
+    "Name": "Syrian Pound",
+    "NativeSymbol": "ل.س.‏",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "SYP",
+    "PluralName": "Syrian pounds"
+  },
+  {
+    "CurrencyId": 101,
+    "Symbol": "฿",
+    "Name": "Thai Baht",
+    "NativeSymbol": "฿",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "THB",
+    "PluralName": "Thai baht"
+  },
+  {
+    "CurrencyId": 102,
+    "Symbol": "DT",
+    "Name": "Tunisian Dinar",
+    "NativeSymbol": "د.ت.‏",
+    "DecimalDigits": 3,
+    "Rounding": 0,
+    "Code": "TND",
+    "PluralName": "Tunisian dinars"
+  },
+  {
+    "CurrencyId": 103,
+    "Symbol": "T$",
+    "Name": "Tongan Paʻanga",
+    "NativeSymbol": "T$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "TOP",
+    "PluralName": "Tongan paʻanga"
+  },
+  {
+    "CurrencyId": 104,
+    "Symbol": "TL",
+    "Name": "Turkish Lira",
+    "NativeSymbol": "TL",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "TRY",
+    "PluralName": "Turkish Lira"
+  },
+  {
+    "CurrencyId": 105,
+    "Symbol": "TT$",
+    "Name": "Trinidad and Tobago Dollar",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "TTD",
+    "PluralName": "Trinidad and Tobago dollars"
+  },
+  {
+    "CurrencyId": 106,
+    "Symbol": "NT$",
+    "Name": "New Taiwan Dollar",
+    "NativeSymbol": "NT$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "TWD",
+    "PluralName": "New Taiwan dollars"
+  },
+  {
+    "CurrencyId": 107,
+    "Symbol": "TSh",
+    "Name": "Tanzanian Shilling",
+    "NativeSymbol": "TSh",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "TZS",
+    "PluralName": "Tanzanian shillings"
+  },
+  {
+    "CurrencyId": 108,
+    "Symbol": "₴",
+    "Name": "Ukrainian Hryvnia",
+    "NativeSymbol": "₴",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "UAH",
+    "PluralName": "Ukrainian hryvnias"
+  },
+  {
+    "CurrencyId": 109,
+    "Symbol": "USh",
+    "Name": "Ugandan Shilling",
+    "NativeSymbol": "USh",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "UGX",
+    "PluralName": "Ugandan shillings"
+  },
+  {
+    "CurrencyId": 110,
+    "Symbol": "$U",
+    "Name": "Uruguayan Peso",
+    "NativeSymbol": "$",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "UYU",
+    "PluralName": "Uruguayan pesos"
+  },
+  {
+    "CurrencyId": 111,
+    "Symbol": "UZS",
+    "Name": "Uzbekistan Som",
+    "NativeSymbol": "UZS",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "UZS",
+    "PluralName": "Uzbekistan som"
+  },
+  {
+    "CurrencyId": 112,
+    "Symbol": "Bs.F.",
+    "Name": "Venezuelan Bolívar",
+    "NativeSymbol": "Bs.F.",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "VEF",
+    "PluralName": "Venezuelan bolívars"
+  },
+  {
+    "CurrencyId": 113,
+    "Symbol": "₫",
+    "Name": "Vietnamese Dong",
+    "NativeSymbol": "₫",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "VND",
+    "PluralName": "Vietnamese dong"
+  },
+  {
+    "CurrencyId": 114,
+    "Symbol": "FCFA",
+    "Name": "CFA Franc BEAC",
+    "NativeSymbol": "FCFA",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "XAF",
+    "PluralName": "CFA francs BEAC"
+  },
+  {
+    "CurrencyId": 115,
+    "Symbol": "CFA",
+    "Name": "CFA Franc BCEAO",
+    "NativeSymbol": "CFA",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "XOF",
+    "PluralName": "CFA francs BCEAO"
+  },
+  {
+    "CurrencyId": 116,
+    "Symbol": "YR",
+    "Name": "Yemeni Rial",
+    "NativeSymbol": "ر.ي.‏",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "YER",
+    "PluralName": "Yemeni rials"
+  },
+  {
+    "CurrencyId": 117,
+    "Symbol": "R",
+    "Name": "South African Rand",
+    "NativeSymbol": "R",
+    "DecimalDigits": 2,
+    "Rounding": 0,
+    "Code": "ZAR",
+    "PluralName": "South African rand"
+  },
+  {
+    "CurrencyId": 118,
+    "Symbol": "ZK",
+    "Name": "Zambian Kwacha",
+    "NativeSymbol": "ZK",
+    "DecimalDigits": 0,
+    "Rounding": 0,
+    "Code": "ZMK",
+    "PluralName": "Zambian kwachas"
+  },
+  {
+    "CurrencyId": 119,
+    "Name": "Bitcoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "BTC",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 120,
+    "Name": "Litecoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "LTC",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 121,
+    "Name": "Namecoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "NMC",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 122,
+    "Name": "SwiftCoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "STC",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 123,
+    "Name": "Bytecoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "BCN",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 124,
+    "Name": "Peercoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "PPC",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 125,
+    "Name": "Dogecoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "XDG",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 126,
+    "Name": "Feathercoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "FTC",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 127,
+    "Name": "Gridcoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "GRC",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 128,
+    "Name": "Primecoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "XPM",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 129,
+    "Name": "Ripple",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "XRP",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 130,
+    "Name": "Nxt",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "NXT",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 131,
+    "Name": "Auroracoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "AUR",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 132,
+    "Name": "Dash",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "DASH",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 133,
+    "Name": "NEO",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "NEO",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 134,
+    "Name": "MazaCoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "MZC",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 135,
+    "Name": "Monero",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "XMR",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 136,
+    "Name": "NEM",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "XEM",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 137,
+    "Name": "PotCoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "POT",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 138,
+    "Name": "Synereo AMP",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "AMP",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 139,
+    "Name": "Titcoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "TIT",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 140,
+    "Name": "Verge",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "XVG",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 141,
+    "Name": "Stellar",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "XLM",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 142,
+    "Name": "Vertcoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "VTC",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 143,
+    "Name": "Ethereum",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "ETH",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 144,
+    "Name": "Ethereum Classic",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "ETC",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 145,
+    "Name": "ether",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "USDT",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 146,
+    "Name": "Neucoin",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "NEO",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 147,
+    "Name": "Decred",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "DCR",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 148,
+    "Name": "Lisk",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "LSK",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 149,
+    "Name": "Zcash",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "ZEC",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 150,
+    "Name": "BitConnect",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "BCC",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 151,
+    "Name": "Bitcoin Cash",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "BCH",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 152,
+    "Name": "EOS.IO",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "EOS",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 153,
+    "Name": "Cardano",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "ADA",
+    "IsCryptocurrency": true
+  },
+  {
+    "CurrencyId": 154,
+    "Name": "Bitcoin Private",
+    "DecimalDigits": 10,
+    "Rounding": 0,
+    "Code": "BTCP",
+    "IsCryptocurrency": true
+  }
+]
